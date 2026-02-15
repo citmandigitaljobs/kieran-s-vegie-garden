@@ -48,45 +48,8 @@ window.onclick = function (event) {
 };
 
 
-// START SEASON CAROUSEL
 
-let slideIndexSpringTopic = 1;
-showSlideSpringTopic(slideIndexSpringTopic);
-
-// Next/previous controls
-function plusSlideSpringTopic(m) {
-  showSlideSpringTopic((slideIndexSpringTopic += m));
-}
-
-// Thumbnail image controls
-function currentSlideSpringTopic(m) {
-  showSlideSpringTopic((slideIndexSpringTopic = m));
-}
-
-function showSlideSpringTopic(m) {
-  let j;
-  // let slideSpringTopic = document.getElementsByClassName("spring-topic");
-    let slideSpringTopic = document.getElementsByClassName("spring-topic");
-  // let dotSpringTopic = document.getElementsByClassName("spring-topic");
-    let dotSpringTopic = document.getElementsByClassName("dot-spring");
-  if (m > slideSpringTopic.length) {
-    slideIndexSpringTopic = 1;
-  }
-  if (m < 1) {
-    slideIndexSpringTopic = slideSpringTopic.length;
-  }
-  for (j = 0; j < slideSpringTopic.length; j++) {
-    slideSpringTopic[j].style.display = "none";
-  }
-  for (j = 0; j < dotSpringTopic.length; j++) {
-    dotSpringTopic[j].className = dotSpringTopic[j].className.replace(" active", "");
-  }
-  slideSpringTopic[slideIndexSpringTopic - 1].style.display = "block";
-  dotSpringTopic[slideIndexSpringTopic - 1].className += " active";
-}
-// END SEASON CAROUSEL
-
-// ---------------
+// START SEASON MODAL SPRING
 
 // Get the modal
 var modalOne = document.getElementById("modalOne");
@@ -106,15 +69,47 @@ btnOne.onclick = function() {
 span.onclick = function() {
   modalOne.style.display = "none";
 };
+// END SEASON MODAL SPRING
+// START SEASON CAROUSEL SPRING
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(eventOne) {
-//   if (eventOne.target == modalOne) {
-//     modalOne.style.display = "none";
-//   }
-// }
+let slideIndexSpringTopic = 1;
+showSlideSpringTopic(slideIndexSpringTopic);
 
-// ---------------
+// Next/previous controls
+function plusSlideSpringTopic(m) {
+  showSlideSpringTopic((slideIndexSpringTopic += m));
+}
+
+// Thumbnail image controls
+function currentSlideSpringTopic(m) {
+  showSlideSpringTopic((slideIndexSpringTopic = m));
+}
+
+function showSlideSpringTopic(m) {
+  let j;
+     let slideSpringTopic = document.getElementsByClassName("spring-topic");
+    let dotSpringTopic = document.getElementsByClassName("dot-spring");
+  if (m > slideSpringTopic.length) {
+    slideIndexSpringTopic = 1;
+  }
+  if (m < 1) {
+    slideIndexSpringTopic = slideSpringTopic.length;
+  }
+  for (j = 0; j < slideSpringTopic.length; j++) {
+    slideSpringTopic[j].style.display = "none";
+  }
+  for (j = 0; j < dotSpringTopic.length; j++) {
+    dotSpringTopic[j].className = dotSpringTopic[j].className.replace(" active", "");
+  }
+  slideSpringTopic[slideIndexSpringTopic - 1].style.display = "block";
+  dotSpringTopic[slideIndexSpringTopic - 1].className += " active";
+}
+// END SEASON CAROUSEL
+// END SEASON CAROUSEL SPRING
+// ----------------
+
+// ------------------------------------------------
+// START SEASON MODAL SUMMER
 
 // Get the modal
 var modalTwo = document.getElementById("modalTwo");
@@ -135,181 +130,45 @@ span.onclick = function() {
   modalTwo.style.display = "none";
 };
 
+// END SEASON MODAL SUMMER
 // ---------------
+// START SEASON CAROUSEL SUMMER
 
-// Get the modal
-var modalThree = document.getElementById("modalThree");
+let slideIndexSummerTopic = 1;
+showSlideSummerTopic(slideIndexSummerTopic);
 
-// Get the button that opens the modal
-var btnThree = document.getElementById("buttonThree");
+// Next/previous controls
+function plusSlideSummerTopic(a) {
+  showSlideSummerTopic((slideIndexSummerTopic += a));
+}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-three")[0];
+// Thumbnail image controls
+function currentSlideSummerTopic(a) {
+  showSlideSummerTopic((slideIndexSummerTopic = a));
+}
 
-// When the user clicks on the button, open the modal
-btnThree.onclick = function() {
-  modalThree.style.display = "block";
-};
+function showSlideSummerTopic(a) {
+  let b;
+    let slideSummerTopic = document.getElementsByClassName("summer-topic");
+    let dotSummerTopic = document.getElementsByClassName("dot-summer");
+  if (a > slideSummerTopic.length) {
+    slideIndexSummerTopic = 1;
+  }
+  if (a < 1) {
+    slideIndexSummerTopic = slideSummerTopic.length;
+  }
+  for (b = 0; a < slideSummerTopic.length; b++) {
+    slideSummerTopic[a].style.display = "none";
+  }
+  for (b = 0; a < dotSummerTopic.length; b++) {
+    dotSummerTopic[a].className = dotSummerTopic[a].className.replace(" active", "");
+  }
+  slideSummerTopic[slideIndexSummerTopic - 1].style.display = "block";
+  dotSummerTopic[slideIndexSummerTopic - 1].className += " active";
+}
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalThree.style.display = "none";
-};
+// END SEASON CAROUSEL SUMMER
+// ----------------
 
-// ---------------
+// ------------------------------------------------
 
-// Get the modal
-var modalFour = document.getElementById("modalFour");
-
-// Get the button that opens the modal
-var btnFour = document.getElementById("buttonFour");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-four")[0];
-
-// When the user clicks on the button, open the modal
-btnFour.onclick = function() {
-  modalFour.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalFour.style.display = "none";
-};
-
-// ---------------
-
-// Get the modal
-var modalFive = document.getElementById("modalFive");
-
-// Get the button that opens the modal
-var btnFive = document.getElementById("buttonFive");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-five")[0];
-
-// When the user clicks on the button, open the modal
-btnFive.onclick = function() {
-  modalFive.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalFive.style.display = "none";
-};
-
-// ---------------
-
-// PREVIEW MODAL START
-
-// Get the modal
-var modalSix = document.getElementById("modalSix");
-
-// Get the button that opens the modal
-var btnSix = document.getElementById("buttonSix");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-six")[0];
-
-// When the user clicks on the button, open the modal
-btnSix.onclick = function() {
-  modalSix.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalSix.style.display = "none";
-};
-
-// ---------------
-
-// Get the modal
-var modalSeven = document.getElementById("modalSeven");
-
-// Get the button that opens the modal
-var btnSeven = document.getElementById("buttonSeven");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-seven")[0];
-
-// When the user clicks on the button, open the modal
-btnSeven.onclick = function() {
-  modalSeven.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalSeven.style.display = "none";
-};
-
-// ---------------
-
-// Get the modal
-var modalEight = document.getElementById("modalEight");
-
-// Get the button that opens the modal
-var btnEight = document.getElementById("buttonEight");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-eight")[0];
-
-// When the user clicks on the button, open the modal
-btnEight.onclick = function() {
-  modalEight.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalEight.style.display = "none";
-};
-
-// ---------------
-
-// Get the modal
-var modalNine = document.getElementById("modalNine");
-
-// Get the button that opens the modal
-var btnNine = document.getElementById("buttonNine");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-nine")[0];
-
-// When the user clicks on the button, open the modal
-btnNine.onclick = function() {
-  modalNine.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalNine.style.display = "none";
-};
-
-// ---------------
-// PREVIEW MODAL END
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(eventTwo) {
-//   if (eventTwo.target == modalTwo) {
-//     modalTwo.style.display = "none";
-//   }
-// };
-// ------------
-
-
-// Function to close all modals
-  // function closeAllModals() {
-  //   document.querySelectorAll('.modal').forEach(modal => {
-  //     modal.classList.display('none');
-  //         modal.classList.style.display('none');
-  //   });
-  // }
-
-// Listen for clicks anywhere on the window
-  // window.addEventListener('click', function(event) {
-  //   // If the click is NOT inside a modal-content, close all modals
-  //   if (!event.target.closest('.modal')) {
-  //     closeAllModals();
-  //   }
-  // });
