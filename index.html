@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Akatab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: 'Akatab';
+      font-size: 22px;
+    }
+  </style>
+  <title>Kieran's Vegie Garden!</title>
+  <!--STYLE.CSS FILE LINK HERE -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- INCLUDE defer SO DIRECT BROWSER THAT THE SCRIPT IS MEANT TO BE EXECUTED AFTER THE DOCUMENT HAS BEEN PARSED-->
+  <script src="./main.js" defer></script>
+</head>
+
+<!--            PUT HAMBURGER MENU AT TOP  -->
+<div class="topnav" id="topMenu">
+  <!-- HAMBURGER MENU -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    <!-- NAVIGATION LINKS -->
+    <nav id="myLinks">
+      <a href="#top">Go to top</a>
+      <a href="#now">Seasonal planting</a>
+      <a href="#weather">Weather</a>
+      <a href="#ideas">Boosting nature's work</a>
+      <a href="#journal">My journal</a>
+    </nav>
+  </a>
+</div>
+<!--    END HAMBURGER MENU    -->
+
+<body>
+  <header>
+    <div class="topflexbox" id="top">
+      <div class="exclude-menu">
+        <div class="topflexbox-limerick">
+          <p> My nephew wants to grow<br>
+            Some vegies in his backyard<br>
+            Here are some ideas to show<br>
+            That it won't be very hard!<br>
+            The plants need time to grow<br>
+            So be patient as you wait<br>
+            When the time is right, you’ll know<br>
+            And your reward will be GREAT!<br>
+          </p>
+        </div>
+      </div>
+      <div class="heading">
+        <h1>Kieran's Vegie Patch</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="happening-now-section">
+      <h2 class="what-now">What can I plant now?</h2>
+      <!-- ---------------- -->
+      <!--       START OF SEASON CAROUSEL -->
+      <div class="season-grid">
+        <section class="season-box">
+          <div class="season">
+            <p class="season-name">SUMMER</p>
+            <img class="season-icon" src="https://i.imgur.com/QVxf3ZW.jpeg" alt="summer">
+            <!-- Trigger/Open The Modal -->
+            <button id="buttonOne">Plant these!</button>
+            <!-- The Modal -->
+            <div id="modalOne" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <!--           <span class="close-one">&times;</span> -->
+                <!--            <span class="close close_multi"><b>CLOSE</b></span> -->
+                <span class="close-one">
+                  <h4>X</h4>
+                </span>
+              </div>
+
+              <!--   START SEASON CAROUSEL -->
+              <section class="carousel">
+                <!--                 ------------- -->
+                <!--           <section class="spring-topic-plus-image"> -->
+                <div class="spring-topic">
+                  <div class="season-topic-title">
+                    <h2>Beans</h2>
+                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
+                    <div class="caption">
+                      <p>These will quickly get taller than you!</p>
+                    </div>
+                  </div>
+                </div>
+                <!--                 ------------- -->
+                <div class="spring-topic">
+                  <div class="season-topic-title">
+                    <h2>Lettuce</h2>
+                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
+                    <div class="caption">
+                      <p>Snails love lettuce too, so beware</p>
+                    </div>
+                  </div>
+                </div>
+                <!--                 ------------- -->
+                <div class="spring-topic">
+                  <div class="season-topic-title">
+                    <h2>Carrots</h2>
+                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="red rose seated stretch">
+                    <div class="caption">
+                      <p>It's a 3 week wait for these to show...</p>
+                    </div>
+                  </div>
+                </div>
+                <!--                 ------------- -->
+                <div class="spring-topic">
+                  <div class="season-topic-title">
+                    <h2>Coriander</h2>
+                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
+                    <div class="caption">
+                      <p>You can eat the leaves, stem and flowers, yum</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- ---------------- -->
+              <div class="transition-arrow-dot-spring">
+                <div class="arrows-spring">
+                  <a class="prev-spring" onclick="plusSlideSpringTopic(-1)">&#10094;</a>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <!-- <section class = "separate-dots-from-image"> -->
+                  <div class="dot-season">
+                    <section class="separate-dots-from-image">
+                      <div style="text-align:center">
+                        <span class="dot-spring" onclick="currentSlideSpringTopic(1)"></span>
+                        <span class="dot-spring" onclick="currentSlideSpringTopic(2)"></span>
+                        <span class="dot-spring" onclick="currentSlideSpringTopic(3)"></span>
+                        <span class="dot-spring" onclick="currentSlideSpringTopic(4)"></span>
+                      </div>
+                    </section>
+                  </div>
+                  <!--               </section> -->
+                  <a class="next-spring" onclick="plusSlideSpringTopic(1)">&#10095;</a>
+                </div>
+              </div>
+              <!-- END Next and previous buttons -->
+              <!--         END OF SEASON CAROUSEL -->
+
+              <!--         START OF SEASON CAROUSEL -->
+
+              <!--         END OF SEASON CAROUSEL -->
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ---------------- -->
+
+    <!--     <section class="weather-calendar"> -->
+    <!--  WEATHER WIDGET START  ROM https://weatherwidget.io/   -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="CURRANS HILL" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="original">CURRANS HILL WEATHER</a>
+    <script>
+      ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, 'script', 'weatherwidget-io-js');
+    </script>
+
+    <!--    </section> -->
+    <!--  WEATHER WIDGET END     -->
+
+  </main>
+</body>
+
+<footer class="footer">
+  <p>Website created February 2026 by an auntie who is excited that her nephew is interested in gardening!</p>
+  <p>Pictures drawn by a cousin who loved to draw when he was a child.</p>
+</footer>
+
+</html>
