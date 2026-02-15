@@ -134,6 +134,8 @@ span.onclick = function() {
 // ---------------
 // START SEASON CAROUSEL SUMMER
 
+// START SEASON CAROUSEL SUMMER
+
 let slideIndexSummerTopic = 1;
 showSlideSummerTopic(slideIndexSummerTopic);
 
@@ -157,11 +159,11 @@ function showSlideSummerTopic(a) {
   if (a < 1) {
     slideIndexSummerTopic = slideSummerTopic.length;
   }
-  for (b = 0; a < slideSummerTopic.length; b++) {
-    slideSummerTopic[a].style.display = "none";
+  for (b = 0; b < slideSummerTopic.length; b++) {
+    slideSummerTopic[b].style.display = "none";
   }
-  for (b = 0; a < dotSummerTopic.length; b++) {
-    dotSummerTopic[a].className = dotSummerTopic[a].className.replace(" active", "");
+  for (b = 0; b < dotSummerTopic.length; b++) {
+    dotSummerTopic[b].className = dotSummerTopic[b].className.replace(" active", "");
   }
   slideSummerTopic[slideIndexSummerTopic - 1].style.display = "block";
   dotSummerTopic[slideIndexSummerTopic - 1].className += " active";
