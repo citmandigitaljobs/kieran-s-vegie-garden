@@ -1,5 +1,5 @@
 /* ALL DISPLAY FORMATS */
-h1 {
+/* h1 {
   font-size: 50px;
   color: #00008b;
 }
@@ -12,7 +12,7 @@ h2 {
 h3 {
   font-size: 20px;
   color: #1e90ff;
-}
+} */
 
 /* h4 IS USED FOR THE CLOSE 'X' BUTTON */
 
@@ -20,11 +20,14 @@ h3 {
   font-size: 35px;
 } */
 
-.modal {
+/* .modal {
   display: none;
     background-color: white;
   padding: 5px;
-    border: 1px solid red;
+} */
+
+.modal-content {
+  padding: 5px;
 }
 
 /* MOBILE PORTRAIT START */
@@ -39,7 +42,7 @@ h3 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: #1679AB;
 }
 
@@ -47,6 +50,726 @@ h3 {
   font-size: 15px;
   color: #C5FF95;
 }
+  
+  .topflexbox {
+    display: grid;
+  }
+
+  .exclude-menu {
+    background-image: url("https://i.imgur.com/Ja5yGRx.jpeg");
+    background-repeat: none;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+/*     align-items: bottom;
+    justify-content: space-between; */
+/*     padding: 10px; */
+  }
+  
+  .heading {
+    text-align: right;
+  }
+
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    color: #001A6E;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+
+  .topflexbox-limerick {
+    display: none;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    align-self: flex-end;
+    opacity: 0.8;
+  }
+  
+  .what-now {
+      text-align: center;
+  }
+
+.modal {
+  display: none;
+  background-color: white;
+  position: absolute;
+/* max-width: 90%;
+  max-height: 80%; */
+/*   padding: 5px; */
+  margin: 20px;
+  border-color: #009990;
+border-style: solid;
+border-width: 1px; /* 5px border width */
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+    background-color: #E1FFBB;
+  grid-gap: 20px;
+  padding: 15px;
+/*   border: 10px solid green; */
+}
+
+.season {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+      background-color: white;
+  padding-bottom: 20px;
+  margin: 15px;
+/*   border: 5px solid orange; */
+}
+
+.caption {
+    font-size: 18px;
+  text-align: center;
+  color: #009990;
+}
+
+.season-box img {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border-radius: 5%;
+}
+
+.season-name {
+  color: #001A6E;
+  font-size: 25px;
+    text-align: center;
+/*   text-align: left; */
+/*   padding-left: 15px; */
+/*   text-underline-offset: 15px; */
+  font-weight: bold;
+}
+
+.season-topic-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: 074799;
+/*       border: solid 2px; */
+/*   border-color: #009990; */
+}
+
+.transition-arrow-dot-spring {
+  display: flex;
+  justify-content: space-evenly;
+  width: max;
+/*   border: 5px solid purple; */
+}
+
+/* Next & previous buttons */
+.prev-spring,
+.next-spring {
+ cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 5px;
+  color: #009990;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  /*   border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+  user-select: none;
+/*   border: 3px solid; */
+}
+
+.arrows-spring {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot-spring {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-spring:hover {
+  background-color: #009990;
+}
+
+.spring-topic-plus-image {
+  background-color: white;
+ 
+}
+  
+  .modal-content {
+     position: relative;
+    float: right;
+left: 10px;
+/*     top: 50px; */
+bottom: 20px;
+    margin-right: 2px;
+/*   right: 50px; */
+/*     color: white; */
+/*     background-color: #001A6E; */
+/*           border: solid 2px;
+      border-radius: 100%;
+  border-color: #009990; */
+  }
+
+/* The Close Button */
+.close-one {
+    text-align: right;
+   color: red;
+/*   position: relative; */
+/*     position: relative; */
+/* float: top; */
+/*   display: inline; */
+  font-size: 25px;
+/*   font-weight: 0bold; */
+/*   margin-bottom: 10px; */
+/*   border-radius: 50%; */
+    user-select: none;
+/*     border: 3px solid; */
+/*   border: 2px solid #888; */
+/* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+/* ------------------------ */
+.summer-topic {
+/*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+}
+
+.transition-arrow-dot-summer {
+  display: flex;
+  justify-content: space-evenly;
+  width: max;
+/*   border: 5px solid purple; */
+}
+
+/* Next & previous buttons */
+.prev-summer,
+.next-summer {
+ cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 5px;
+  color: #009990;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  /*   border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+  user-select: none;
+/*   border: 3px solid; */
+}
+
+.arrows-summer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot-summer {
+    cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-summer:hover {
+  background-color: #009990;
+}
+
+.dot-summer:active {
+  background-color: #009990;
+       border: 5px solid red;
+}
+
+.dot-summer:hover {
+  background-color: #009990;
+}
+
+.summer-topic-plus-image {
+  background-color: white;
+}
+
+/* The Close Button */
+.close-two {
+    color: #888;
+  position: relative;
+float: right;
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+/*   margin-bottom: 10px; */
+  border-radius: 50%;
+  /*   user-select: none; */
+  /*   border: 3px solid; */
+  border: 2px solid #888;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ------------------ */
+.autumn-topic {
+/*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+}
+
+.transition-arrow-dot-autumn {
+  display: flex;
+  justify-content: space-evenly;
+  width: max;
+/*   border: 5px solid purple; */
+}
+
+/* Next & previous buttons */
+.prev-autumn,
+.next-autumn {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 5px;
+  color: #009990;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  /*   border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+  user-select: none;
+/*   border: 3px solid; */
+}
+
+.arrows-autumn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot-autumn {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-autumn:hover {
+  background-color: #009990;
+}
+
+.dot-autumn:active {
+  background-color: #009990;
+/*        border: 5px solid red; */
+}
+
+.dot-autumn:hover {
+  background-color: #009990;
+}
+
+.autumn-topic-plus-image {
+  background-color: white;
+}
+
+/* The Close Button */
+.close-three {
+   color: #888;
+  position: relative;
+float: right;
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+/*   margin-bottom: 10px; */
+  border-radius: 50%;
+  /*   user-select: none; */
+  /*   border: 3px solid; */
+  border: 2px solid #888;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* ------------------ */
+.winter-topic {
+/*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+}
+
+.transition-arrow-dot-winter {
+  display: flex;
+  justify-content: space-evenly;
+  width: max;
+/*   border: 5px solid purple; */
+}
+
+/* Next & previous buttons */
+.prev-winter,
+.next-winter {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 5px;
+  color: #009990;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  /*   border-radius: 0 3px 3px 0; */
+  border-radius: 50%;
+  user-select: none;
+/*   border: 3px solid; */
+}
+
+.arrows-winter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot-winter {
+   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-winter:hover {
+  background-color: #009990;
+}
+
+.dot-winter:active {
+  background-color: #009990;
+/*        border: 5px solid red; */
+}
+
+.dot-winter:hover {
+  background-color: #009990;
+}
+
+.winter-topic-plus-image {
+  background-color: white;
+}
+
+/* The Close Button */
+.close-four {
+  color: #888;
+  position: relative;
+float: right;
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+/*   margin-bottom: 10px; */
+  border-radius: 50%;
+  /*   user-select: none; */
+  /*   border: 3px solid; */
+  border: 2px solid #888;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* ------------------- */
+button {
+  color: #808080;
+  background-color: #f9fbfa;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #888;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  /*            border: 5px solid green; */
+}
+  
+  
+  /*   INFORMATION BOXES START -------------- */
+  
+/*   INFORMATION BOXES */
+  .information-container {
+ display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 15px;
+  border: 10px solid pink;
+  }
+  
+  .information-image {
+  /* width in % of viewport */
+width: 100%;
+}
+
+  
+/*  FORMAT THE JOURNAL START */
+  
+  
+/* .my-journal {
+  margin-top: 20px;
+      border: 10px solid red;
+} */
+  
+  .journal-notes-display {
+    display: none;
+  }
+
+.my-journal-section {
+  display: grid;
+/*   padding: 20px; */
+  width: 100%;
+    border: 1px solid green;
+}
+  
+  .journal {
+/*   width: 50%; */
+      width: inherit;
+/*     height: max; */
+            border: 3px solid orange;
+  }
+  
+  .journal-grid {
+/*     width: 50%; */
+      width: inherit;
+      border: 3px solid red;
+  }
+  
+form {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 25px 25px 26px;
+/*   width: 100%; */
+    width: inherit;
+/*     border: 1px solid #959595; */
+      border: 1px solid purple;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset:not(:first-child) {
+  margin-top: 10px;
+}
+
+textarea {
+  height: 50px;
+  width: 330px;
+  padding: 0;
+  margin: 0;
+}
+
+/* THIS FORMATS THE FORM DATA ENTRY BOXES */
+
+input[type="text"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+textarea,
+input[type="textarea"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+input[type="date"],
+select {
+  font-family: "Akatab";
+  color: #838996;
+  font-size: 24px;
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+#submit-button {
+  font-family: "Akatab";
+  color: #838996;
+  font-weight: bold;
+  font-size: 24px;
+  background: #dcdcdc;
+  border: 6px solid #686b69;
+  border-radius: 8px;
+}
+
+input[type="submit"],
+select {
+  font-family: "Akatab";
+  padding: 6px;
+  margin: 0;
+  background: #fff9e2;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+  margin: 2px 0 0;
+}
+
+input[type="textarea"] {
+  font-size: 24px;
+  width: 100%;
+  height: 60px;
+  margin: 2px 0 0;
+}
+
+.journal-heading {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+/*     width: 100%; */
+    width: inherit;
+}
+
+/* .journal-image {
+  display: none;
+  height: 100px;
+  padding-left: 100px;
+} */
+
+.appsheet {
+/*   width: 100%; */
+  width: inherit;
+  margin: 2px;
+  border: 10px solid yellow;
+}
+
+.journal-notes-display {
+  /*   display: flexbox;
+  flex-wrap: wrap; */
+  /*   background: rgba(255, 255, 255, 0.6); */
+/*     width: 100%; */
+    width: inherit;
+  padding: 25px 25px 26px;
+  position: relative;
+  /*   font-size: 1.5em; */
+  text-align: center;
+/*   border: 1px solid #959595; */
+    border: 1px solid blue;
+}
+
+/* FORMAT JOURNAL END */
+  
+  .footer {
+     font-size: 12px;
+    color: white;
+    background-color: #009990;
+    padding: 5px;
+/*   width: 100%;
+  height: 60px; */
+  }
+
+}
+/*MOBILE PORTRAIT END */
+
+/* --------------------------- */
+
+/* TABLET PORTRAIT START */
+/* HIDE THE TOP NAVIGATION BAR FOR TABLET AND MOBILE  */
+/* @media screen and (min-width: 321px) and (max-width: 480px) { */
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  
+  h1 {
+    font-size: 25px;
+    color: #074173;
+    /*     color:white; */
+    /*     background-color: white; */
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1679ab;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #c5ff95;
+  }
+  
+ 
 
   
   .topflexbox {
@@ -65,14 +788,9 @@ h3 {
 /*     padding: 10px; */
   }
   
-/*   .heading {
-    font-size: 5px;
-    height: 20px;
-    color: white;
-    background-color: white;
-    align-self: flex-end;
-    opacity: 0.8;
-  } */
+  .heading {
+    text-align: right;
+  }
 
   /* HIDE TASK LIST */
 
@@ -125,180 +843,604 @@ h3 {
     opacity: 0.8;
   }
   
+  .what-now {
+      text-align: center;
+  }
+
+
+
   .modal {
     display: none;
+    position: absolute;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid red;
   }
 
-  .happening-now-section {
-    margin-top: 30px;
-        border: 1px solid red;
+  .season-grid {
+      display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    place-items: center;
+    grid-gap: 5px;
+    padding: 5px;
+/*     border: 10px solid green; */
   }
 
-  
-.season-grid {
+  /*     .season-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-  padding: 15px;
-  border: 2px solid green;
-}
-
-.season {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  background-color: white;
-      background-color: #C5FF95;
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 20px;
-/*   border: 5px solid orange; */
-}
+} */
 
-.carousel {
-/*   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  border: 5px solid pink; */
-}
+  .season-box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+        background-color: #E1FFBB;
+        width: 100%;
+    min-height: 100vh;
+    border: 5px solid red;
+  }
 
-.spring-topic {
-/*  display: grid;
+  .season {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    height: 250px;
+    align-items: center;
+    place-items: center;
+    padding-bottom: 20px;
+    margin: 15px;
+    border: 5px solid orange;
+  }
+  
+/*   .season {
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+} */
+
+  .caption {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+  }
+
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 75%;
+    border-radius: 5%;
+  }
+
+  .season-name {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .season-topic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .transition-arrow-dot-spring {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    border: 5px solid purple;
+  }
+
+  /* Next & previous buttons */
+  .prev-spring,
+  .next-spring {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    border: 3px solid;
+  }
+
+  .arrows-spring {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-spring {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-spring:hover {
+    background-color: green;
+  }
+
+  .spring-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-one {
+    color: #888;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    /*   user-select: none; */
+    /*   border: 3px solid; */
+    border: 2px solid #888;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* ------------------------ */
+  .summer-topic {
+    /*  display: grid;
   position: relative;
   align-self: center;
    border: 10px solid pink; */
-}
-
-.caption {
-    font-size: 18px;
-  text-align: center;
-  color:black;
-}
-
-/* .spring-topic {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  background-color: white;
-  border: 5px solid red; 
-} */
-
-.season-box img {
-  display: block;
-  margin: auto;
-  width: 75%;
-  border-radius: 5%;
-}
-
-.season-name {
-/*   color: #C5FF95; */
-      color: #1679AB;
-  font-size: 30px;
-    text-align: center;
-/*   text-align: left; */
-/*   padding-left: 15px; */
-/*   text-underline-offset: 15px; */
-  font-weight: bold;
-}
-
-.season-topic-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-.transition-arrow-dot-spring {
-  display: flex;
-  justify-content: space-evenly;
-  width: max;
-  border: 5px solid purple;
-}
-
-/* Next & previous buttons */
-.prev-spring,
-.next-spring {
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: green;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  /*   border-radius: 0 3px 3px 0; */
-  border-radius: 50%;
-  user-select: none;
-  border: 3px solid;
-}
-
-.arrows-spring {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-/* The dots/bullets/indicators */
-.dot-spring {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot-spring:hover {
-  background-color: green;
-}
-
-/* .dot-spring:active {
-  background-color: green;
-       border: 5px solid red;
-} */
-
-/* .dot-spring:hover {
-  background-color: green;
-} */
-
-.spring-topic-plus-image {
-  background-color: white;
-}
-
-/* The Close Button */
-.close-one {
-  color: #888;
-  float: right;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  /*   user-select: none; */
-  /*   border: 3px solid; */
-  border: 2px solid #888;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-button {
-  color: #808080;
-  background-color: #f9fbfa;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #888;
-  border-radius: 50px;
-  margin-bottom: 10px;
-  /*            border: 5px solid green; */
-}
-}
-
-  .footer {
-     font-size: 14px;
   }
+
+  .transition-arrow-dot-summer {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    border: 5px solid purple;
+  }
+
+  /* Next & previous buttons */
+  .prev-summer,
+  .next-summer {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    border: 3px solid;
+  }
+
+  .arrows-summer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-summer {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-summer:hover {
+    background-color: green;
+  }
+
+  .dot-summer:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-summer:hover {
+    background-color: green;
+  }
+
+  .summer-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-two {
+    color: #888;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    /*   user-select: none; */
+    /*   border: 3px solid; */
+    border: 2px solid #888;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* ------------------ */
+  .autumn-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-autumn {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    border: 5px solid purple;
+  }
+
+  /* Next & previous buttons */
+  .prev-autumn,
+  .next-autumn {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    border: 3px solid;
+  }
+
+  .arrows-autumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-autumn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-autumn:hover {
+    background-color: green;
+  }
+
+  .dot-autumn:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-autumn:hover {
+    background-color: green;
+  }
+
+  .autumn-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-three {
+    color: #888;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    /*   user-select: none; */
+    /*   border: 3px solid; */
+    border: 2px solid #888;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* ------------------ */
+  .winter-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-winter {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    border: 5px solid purple;
+  }
+
+  /* Next & previous buttons */
+  .prev-winter,
+  .next-winter {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    border: 3px solid;
+  }
+
+  .arrows-winter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-winter {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-winter:hover {
+    background-color: green;
+  }
+
+  .dot-winter:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-winter:hover {
+    background-color: green;
+  }
+
+  .winter-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-four {
+    color: #888;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    /*   user-select: none; */
+    /*   border: 3px solid; */
+    border: 2px solid #888;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* ------------------- */
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #888;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    /*            border: 5px solid green; */
+  
+}
+
+/*   INFORMATION BOXES START -------------- */
+ /*   INFORMATION BOXES START -------------- */
+  
+/*   INFORMATION BOXES */
+  .information-container {
+ display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 15px;
+  border: 10px solid pink;
+  }
+  
+  .information-image {
+  /* width in % of viewport */
+width: 100%;
+}
+
+  
+/*  FORMAT THE JOURNAL START */
+  
+  
+/* .my-journal {
+  margin-top: 20px;
+      border: 10px solid red;
+} */
+
+.my-journal-section {
+  display: grid;
+/*   padding: 20px; */
+  width: 100%;
+    border: 1px solid green;
+}
+  
+  .journal {
+/*   width: 50%; */
+      width: inherit;
+/*     height: max; */
+            border: 3px solid orange;
+  }
+  
+  .journal-grid {
+/*     width: 50%; */
+      width: inherit;
+      border: 3px solid red;
+  }
+  
+form {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 25px 25px 26px;
+/*   width: 100%; */
+    width: inherit;
+/*     border: 1px solid #959595; */
+      border: 1px solid purple;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset:not(:first-child) {
+  margin-top: 10px;
+}
+
+textarea {
+  height: 50px;
+  width: 330px;
+  padding: 0;
+  margin: 0;
+}
+
+/* THIS FORMATS THE FORM DATA ENTRY BOXES */
+
+input[type="text"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+textarea,
+input[type="textarea"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+input[type="date"],
+select {
+  font-family: "Akatab";
+  color: #838996;
+  font-size: 24px;
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+#submit-button {
+  font-family: "Akatab";
+  color: #838996;
+  font-weight: bold;
+  font-size: 24px;
+  background: #dcdcdc;
+  border: 6px solid #686b69;
+  border-radius: 8px;
+}
+
+input[type="submit"],
+select {
+  font-family: "Akatab";
+  padding: 6px;
+  margin: 0;
+  background: #fff9e2;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+  margin: 2px 0 0;
+}
+
+input[type="textarea"] {
+  font-size: 24px;
+  width: 100%;
+  height: 60px;
+  margin: 2px 0 0;
+}
+
+.journal-heading {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+/*     width: 100%; */
+    width: inherit;
+}
+
+/* .journal-image {
+  display: none;
+  height: 100px;
+  padding-left: 100px;
+} */
+
+.appsheet {
+/*   width: 100%; */
+  width: inherit;
+  margin: 2px;
+  border: 10px solid yellow;
+}
+
+.journal-notes-display {
+  /*   display: flexbox;
+  flex-wrap: wrap; */
+  /*   background: rgba(255, 255, 255, 0.6); */
+/*     width: 100%; */
+    width: inherit;
+  padding: 25px 25px 26px;
+  position: relative;
+  /*   font-size: 1.5em; */
+  text-align: center;
+/*   border: 1px solid #959595; */
+    border: 1px solid blue;
+}
+  
+    .footer {
+     font-size: 14px;
+    color: white;
+    background-color: #009990;
+    padding: 5px;
+/*   width: 100%;
+  height: 60px; */
+  }
+
+/* FORMAT JOURNAL END */
+}
