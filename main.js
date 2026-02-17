@@ -134,8 +134,6 @@ span.onclick = function() {
 // ---------------
 // START SEASON CAROUSEL SUMMER
 
-// START SEASON CAROUSEL SUMMER
-
 let slideIndexSummerTopic = 1;
 showSlideSummerTopic(slideIndexSummerTopic);
 
@@ -171,6 +169,125 @@ function showSlideSummerTopic(a) {
 
 // END SEASON CAROUSEL SUMMER
 // ----------------
+// ------------------------------------------------
+// START SEASON MODAL AUTUMN
+
+// Get the modal
+var modalThree = document.getElementById("modalThree");
+
+// Get the button that opens the modal
+var btnThree = document.getElementById("buttonThree");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-three")[0];
+
+// When the user clicks on the button, open the modal
+btnThree.onclick = function() {
+  modalThree.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalThree.style.display = "none";
+};
+
+// END SEASON MODAL AUTUMN
+// ---------------
+// START SEASON CAROUSEL AUTUMN
+
+let slideIndexAutumnTopic = 1;
+showSlideAutumnTopic(slideIndexAutumnTopic);
+
+// Next/previous controls
+function plusSlideAutumnTopic(c) {
+  showSlideAutumnTopic((slideIndexAutumnTopic += c));
+}
+
+// Thumbnail image controls
+function currentSlideAutumnTopic(c) {
+  showSlideAutumnTopic((slideIndexAutumnTopic = c));
+}
+
+function showSlideAutumnTopic(c) {
+  let d;
+    let slideAutumnTopic = document.getElementsByClassName("autumn-topic");
+    let dotAutumnTopic = document.getElementsByClassName("dot-autumn");
+  if (c > slideAutumnTopic.length) {
+    slideIndexAutumnTopic = 1;
+  }
+  if (c < 1) {
+    slideIndexAutumnTopic = slideAutumnTopic.length;
+  }
+  for (d = 0; d < slideAutumnTopic.length; d++) {
+    slideAutumnTopic[d].style.display = "none";
+  }
+  for (d = 0; d < dotAutumnTopic.length; d++) {
+    dotAutumnTopic[d].className = dotAutumnTopic[d].className.replace(" active", "");
+  }
+  slideAutumnTopic[slideIndexAutumnTopic - 1].style.display = "block";
+  dotAutumnTopic[slideIndexAutumnTopic - 1].className += " active";
+}
+
+// END SEASON CAROUSEL AUTUMN
+// ----------------
+// START SEASON MODAL WINTER
+
+// Get the modal
+var modalFour = document.getElementById("modalFour");
+
+// Get the button that opens the modal
+var btnFour = document.getElementById("buttonFour");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-four")[0];
+
+// When the user clicks on the button, open the modal
+btnFour.onclick = function() {
+  modalFour.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalFour.style.display = "none";
+};
+
+// END SEASON MODAL WINTER
+// ---------------
+// START SEASON CAROUSEL WINTER
+
+let slideIndexWinterTopic = 1;
+showSlideWinterTopic(slideIndexWinterTopic);
+
+// Next/previous controls
+function plusSlideWinterTopic(e) {
+  showSlideWinterTopic((slideIndexWinterTopic += e));
+}
+
+// Thumbnail image controls
+function currentSlideWinterTopic(e) {
+  showSlideWinterTopic((slideIndexWinterTopic = e));
+}
+
+function showSlideWinterTopic(e) {
+  let f;
+    let slideWinterTopic = document.getElementsByClassName("winter-topic");
+    let dotWinterTopic = document.getElementsByClassName("dot-winter");
+  if (e > slideWinterTopic.length) {
+    slideIndexWinterTopic = 1;
+  }
+  if (e < 1) {
+    slideIndexWinterTopic = slideWinterTopic.length;
+  }
+  for (f = 0; f < slideWinterTopic.length; f++) {
+    slideWinterTopic[f].style.display = "none";
+  }
+  for (f = 0; f < dotWinterTopic.length; f++) {
+    dotWinterTopic[f].className = dotWinterTopic[f].className.replace(" active", "");
+  }
+  slideWinterTopic[slideIndexWinterTopic - 1].style.display = "block";
+  dotWinterTopic[slideIndexWinterTopic - 1].className += " active";
+}
+
+// END SEASON CAROUSEL WINTER
 
 // ------------------------------------------------
-
