@@ -33,24 +33,23 @@ h3 {
 /* MOBILE PORTRAIT START */
 /* HIDE THE TOP NAVIGATION BAR FOR TABLET AND MOBILE  */
 @media screen and (max-width: 320px) {
-  
   h1 {
-  font-size: 25px;
-  color: #074173;
-/*     color:white; */
-/*     background-color: white; */
-}
+    font-size: 25px;
+    color: #074173;
+    /*     color:white; */
+    /*     background-color: white; */
+  }
 
-h2 {
-  font-size: 25px;
-  color: #1679AB;
-}
+  h2 {
+    font-size: 25px;
+    color: #1679ab;
+  }
 
-h3 {
-  font-size: 15px;
-  color: #C5FF95;
-}
-  
+  h3 {
+    font-size: 15px;
+    color: #c5ff95;
+  }
+
   .topflexbox {
     display: grid;
   }
@@ -62,11 +61,11 @@ h3 {
     background-size: cover;
     height: 200px;
     display: flex;
-/*     align-items: bottom;
+    /*     align-items: bottom;
     justify-content: space-between; */
-/*     padding: 10px; */
+    /*     padding: 10px; */
   }
-  
+
   .heading {
     text-align: right;
   }
@@ -92,7 +91,7 @@ h3 {
 
   /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
   .topnav a {
-    color: #001A6E;
+    color: #001a6e;
     font-size: 20px;
     display: block;
     justify-self: right;
@@ -121,626 +120,647 @@ h3 {
     align-self: flex-end;
     opacity: 0.8;
   }
-  
+
   .what-now {
-      text-align: center;
+    text-align: center;
   }
 
-.modal {
-  display: none;
-  background-color: white;
-  position: absolute;
-/* max-width: 90%;
-  max-height: 80%; */
-/*   padding: 5px; */
-  margin: 20px;
-  border-color: #009990;
-border-style: solid;
-border-width: 1px; /* 5px border width */
-}
+  .modal {
+    display: none;
+    background-color: white;
+    position: absolute;
+    margin: 20px;
+    border-color: #009990;
+    border-style: solid;
+    border-width: 1px; /* 5px border width */
+    border-radius: 25px;
+    box-shadow: 3px 3px #009990;
+  }
 
-.season-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-    background-color: #E1FFBB;
-  grid-gap: 20px;
-  padding: 15px;
-/*   border: 10px solid green; */
-}
+  .season-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #e1ffbb;
+    grid-gap: 20px;
+    padding: 15px;
+    /*   border: 10px solid green; */
+  }
 
-.season {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-      background-color: white;
-  padding-bottom: 20px;
-  margin: 15px;
-/*   border: 5px solid orange; */
-}
+  .season {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: white;
+    padding-bottom: 20px;
+    margin: 15px;
+    /*   border: 5px solid orange; */
+  }
 
-.caption {
+  .caption {
     font-size: 18px;
-  text-align: center;
-  color: #009990;
-}
-
-.season-box img {
-  display: block;
-  margin: auto;
-  width: 75%;
-  border-radius: 5%;
-}
-
-.season-name {
-  color: #001A6E;
-  font-size: 25px;
     text-align: center;
-/*   text-align: left; */
-/*   padding-left: 15px; */
-/*   text-underline-offset: 15px; */
-  font-weight: bold;
-}
+    color: #009990;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 
-.season-topic-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: 074799;
-/*       border: solid 2px; */
-/*   border-color: #009990; */
-}
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 75%;
+    border-radius: 5%;
+  }
 
-.transition-arrow-dot-spring {
-  display: flex;
-  justify-content: space-evenly;
-  width: max;
-/*   border: 5px solid purple; */
-}
+  .season-name {
+    color: #001a6e;
+    font-size: 25px;
+    text-align: center;
+    /*   text-align: left; */
+    /*   padding-left: 15px; */
+    /*   text-underline-offset: 15px; */
+    font-weight: bold;
+  }
 
-/* Next & previous buttons */
-.prev-spring,
-.next-spring {
- cursor: pointer;
-  position: relative;
-  width: auto;
-  margin-top: -22px;
-  padding: 5px;
-  color: #009990;
-  font-weight: bold;
-  font-size: 22px;
-  transition: 0.6s ease;
-  /*   border-radius: 0 3px 3px 0; */
-  border-radius: 50%;
-  user-select: none;
-/*   border: 3px solid; */
-}
+  .season-topic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: 074799;
+    /*       border: solid 2px; */
+    /*   border-color: #009990; */
+  }
 
-.arrows-spring {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
+  .transition-arrow-dot-spring {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*   border: 5px solid purple; */
+  }
 
-/* The dots/bullets/indicators */
-.dot-spring {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+  /* Next & previous buttons */
+  .prev-spring,
+  .next-spring {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
 
-.active,
-.dot-spring:hover {
-  background-color: #009990;
-}
+  .arrows-spring {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
 
-.spring-topic-plus-image {
-  background-color: white;
- 
-}
-  
+  /* The dots/bullets/indicators */
+  .dot-spring {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-spring:hover {
+    background-color: #009990;
+  }
+
+  .spring-topic-plus-image {
+    background-color: white;
+  }
+
   .modal-content {
-     position: relative;
+    position: relative;
     float: right;
-left: 10px;
-/*     top: 50px; */
-bottom: 20px;
+    /* left: 15px; */
+    /*     top: 50px; */
+    bottom: 20px;
     margin-right: 2px;
-/*   right: 50px; */
-/*     color: white; */
-/*     background-color: #001A6E; */
-/*           border: solid 2px;
+    /*   right: 50px; */
+    /*     color: white; */
+    /*     background-color: #001A6E; */
+    /*           border: solid 2px;
       border-radius: 100%;
   border-color: #009990; */
   }
 
-/* The Close Button */
-.close-one {
+  /* The Close Button */
+  .close-one {
     text-align: right;
-   color: red;
-/*   position: relative; */
-/*     position: relative; */
-/* float: top; */
-/*   display: inline; */
-  font-size: 25px;
-/*   font-weight: 0bold; */
-/*   margin-bottom: 10px; */
-/*   border-radius: 50%; */
+    /*    color: red; */
+    color: grey;
+    /*   position: relative; */
+    /*     position: relative; */
+    /* float: top; */
+    /*   display: inline; */
+    font-size: 25px;
+    /*   font-weight: 0bold; */
+    /*   margin-bottom: 10px; */
+    /*   border-radius: 50%; */
     user-select: none;
-/*     border: 3px solid; */
-/*   border: 2px solid #888; */
-/* padding-left: 10px;
+    /*     border: 3px solid; */
+    /*   border: 2px solid #888; */
+    /* padding-left: 10px;
   padding-right: 10px; */
-}
+  }
 
-/* ------------------------ */
-.summer-topic {
-/*  display: grid;
+  /* ------------------------ */
+  .summer-topic {
+    /*  display: grid;
   position: relative;
   align-self: center;
    border: 10px solid pink; */
-}
+  }
 
-.transition-arrow-dot-summer {
-  display: flex;
-  justify-content: space-evenly;
-  width: max;
-/*   border: 5px solid purple; */
-}
+  .transition-arrow-dot-summer {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*   border: 5px solid purple; */
+  }
 
-/* Next & previous buttons */
-.prev-summer,
-.next-summer {
- cursor: pointer;
-  position: relative;
-  width: auto;
-  margin-top: -22px;
-  padding: 5px;
-  color: #009990;
-  font-weight: bold;
-  font-size: 22px;
-  transition: 0.6s ease;
-  /*   border-radius: 0 3px 3px 0; */
-  border-radius: 50%;
-  user-select: none;
-/*   border: 3px solid; */
-}
-
-.arrows-summer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-/* The dots/bullets/indicators */
-.dot-summer {
+  /* Next & previous buttons */
+  .prev-summer,
+  .next-summer {
     cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
 
-.active,
-.dot-summer:hover {
-  background-color: #009990;
-}
+  .arrows-summer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
 
-.dot-summer:active {
-  background-color: #009990;
-       border: 5px solid red;
-}
+  /* The dots/bullets/indicators */
+  .dot-summer {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 
-.dot-summer:hover {
-  background-color: #009990;
-}
+  .active,
+  .dot-summer:hover {
+    background-color: #009990;
+  }
 
-.summer-topic-plus-image {
-  background-color: white;
-}
+  .dot-summer:active {
+    background-color: #009990;
+    border: 5px solid red;
+  }
 
-/* The Close Button */
-.close-two {
-    color: #888;
-  position: relative;
-float: right;
-  display: inline;
-  font-size: 30px;
-  font-weight: bold;
-/*   margin-bottom: 10px; */
-  border-radius: 50%;
-  /*   user-select: none; */
-  /*   border: 3px solid; */
-  border: 2px solid #888;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .dot-summer:hover {
+    background-color: #009990;
+  }
 
-/* ------------------ */
-.autumn-topic {
-/*  display: grid;
-  position: relative;
-  align-self: center;
-   border: 10px solid pink; */
-}
+  .summer-topic-plus-image {
+    background-color: white;
+  }
 
-.transition-arrow-dot-autumn {
-  display: flex;
-  justify-content: space-evenly;
-  width: max;
-/*   border: 5px solid purple; */
-}
+  /* The Close Button */
+  .close-two {
+    text-align: right;
+    /*    color: red; */
+    color: grey;
+    /*   position: relative; */
+    /*     position: relative; */
+    /* float: top; */
+    /*   display: inline; */
+    font-size: 25px;
+    /*   font-weight: 0bold; */
+    /*   margin-bottom: 10px; */
+    /*   border-radius: 50%; */
+    user-select: none;
+    /*     border: 3px solid; */
+    /*   border: 2px solid #888; */
+    /* padding-left: 10px;
+  padding-right: 10px; */
+  }
 
-/* Next & previous buttons */
-.prev-autumn,
-.next-autumn {
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  margin-top: -22px;
-  padding: 5px;
-  color: #009990;
-  font-weight: bold;
-  font-size: 22px;
-  transition: 0.6s ease;
-  /*   border-radius: 0 3px 3px 0; */
-  border-radius: 50%;
-  user-select: none;
-/*   border: 3px solid; */
-}
-
-.arrows-autumn {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-/* The dots/bullets/indicators */
-.dot-autumn {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot-autumn:hover {
-  background-color: #009990;
-}
-
-.dot-autumn:active {
-  background-color: #009990;
-/*        border: 5px solid red; */
-}
-
-.dot-autumn:hover {
-  background-color: #009990;
-}
-
-.autumn-topic-plus-image {
-  background-color: white;
-}
-
-/* The Close Button */
-.close-three {
-   color: #888;
-  position: relative;
-float: right;
-  display: inline;
-  font-size: 30px;
-  font-weight: bold;
-/*   margin-bottom: 10px; */
-  border-radius: 50%;
-  /*   user-select: none; */
-  /*   border: 3px solid; */
-  border: 2px solid #888;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-/* ------------------ */
-.winter-topic {
-/*  display: grid;
+  /* ------------------ */
+  .autumn-topic {
+    /*  display: grid;
   position: relative;
   align-self: center;
    border: 10px solid pink; */
-}
+  }
 
-.transition-arrow-dot-winter {
-  display: flex;
-  justify-content: space-evenly;
-  width: max;
-/*   border: 5px solid purple; */
-}
+  .transition-arrow-dot-autumn {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*   border: 5px solid purple; */
+  }
 
-/* Next & previous buttons */
-.prev-winter,
-.next-winter {
-  cursor: pointer;
+  /* Next & previous buttons */
+  .prev-autumn,
+  .next-autumn {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-autumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-autumn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-autumn:hover {
+    background-color: #009990;
+  }
+
+  .dot-autumn:active {
+    background-color: #009990;
+    /*        border: 5px solid red; */
+  }
+
+  .dot-autumn:hover {
+    background-color: #009990;
+  }
+
+  .autumn-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-three {
+    text-align: right;
+    /*    color: red; */
+    color: grey;
+    /*   position: relative; */
+    /*     position: relative; */
+    /* float: top; */
+    /*   display: inline; */
+    font-size: 25px;
+    /*   font-weight: 0bold; */
+    /*   margin-bottom: 10px; */
+    /*   border-radius: 50%; */
+    user-select: none;
+    /*     border: 3px solid; */
+    /*   border: 2px solid #888; */
+    /* padding-left: 10px;
+  padding-right: 10px; */
+  }
+  /* ------------------ */
+  .winter-topic {
+    /*  display: grid;
   position: relative;
-  width: auto;
-  margin-top: -22px;
-  padding: 5px;
-  color: #009990;
-  font-weight: bold;
-  font-size: 22px;
-  transition: 0.6s ease;
-  /*   border-radius: 0 3px 3px 0; */
-  border-radius: 50%;
-  user-select: none;
-/*   border: 3px solid; */
-}
+  align-self: center;
+   border: 10px solid pink; */
+  }
 
-.arrows-winter {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
+  .transition-arrow-dot-winter {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*   border: 5px solid purple; */
+  }
 
-/* The dots/bullets/indicators */
-.dot-winter {
-   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+  /* Next & previous buttons */
+  .prev-winter,
+  .next-winter {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
 
-.active,
-.dot-winter:hover {
-  background-color: #009990;
-}
+  .arrows-winter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
 
-.dot-winter:active {
-  background-color: #009990;
-/*        border: 5px solid red; */
-}
+  /* The dots/bullets/indicators */
+  .dot-winter {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 
-.dot-winter:hover {
-  background-color: #009990;
-}
+  .active,
+  .dot-winter:hover {
+    background-color: #009990;
+  }
 
-.winter-topic-plus-image {
-  background-color: white;
-}
+  .dot-winter:active {
+    background-color: #009990;
+    /*        border: 5px solid red; */
+  }
 
-/* The Close Button */
-.close-four {
-  color: #888;
-  position: relative;
-float: right;
-  display: inline;
-  font-size: 30px;
-  font-weight: bold;
-/*   margin-bottom: 10px; */
-  border-radius: 50%;
-  /*   user-select: none; */
-  /*   border: 3px solid; */
-  border: 2px solid #888;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .dot-winter:hover {
+    background-color: #009990;
+  }
 
+  .winter-topic-plus-image {
+    background-color: white;
+  }
 
-/* ------------------- */
-button {
-  color: #808080;
-  background-color: #f9fbfa;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #888;
-  border-radius: 50px;
-  margin-bottom: 5px;
-  /*            border: 5px solid green; */
-}
-  
-  
+  /* The Close Button */
+  .close-four {
+    text-align: right;
+    /*    color: red; */
+    color: grey;
+    /*   position: relative; */
+    /*     position: relative; */
+    /* float: top; */
+    /*   display: inline; */
+    font-size: 25px;
+    /*   font-weight: 0bold; */
+    /*   margin-bottom: 10px; */
+    /*   border-radius: 50%; */
+    user-select: none;
+    /*     border: 3px solid; */
+    /*   border: 2px solid #888; */
+    /* padding-left: 10px;
+  padding-right: 10px; */
+  }
+
+  /* ------------------- */
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    /*            border: 5px solid green; */
+  }
+
   /*   INFORMATION BOXES START -------------- */
-  
-/*   INFORMATION BOXES */
-  .information-container {
- display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-  padding: 15px;
-  border: 10px solid pink;
+
+  /*   INFORMATION BOXES */
+  .information {
+    text-align: center;
+    background-color: white;
+    /*         border: 10px solid blue; */
+  }
+
+  .image-box {
+    height: 60%;
+    /*         object-fit: contain; */
+    object-fit: contain;
+  }
+
+.bee-image-portrait {
+    display: none;
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
   }
   
-  .information-image {
-  /* width in % of viewport */
-width: 100%;
-}
+   .bee-image-landscape {
+    /* width in % of viewport */
+/*      display: none; */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+  
 
-  
-/*  FORMAT THE JOURNAL START */
-  
-  
-/* .my-journal {
+  .manure-image {
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    /*              border: 10px solid red; */
+  }
+
+  /*  FORMAT THE JOURNAL START */
+
+  /* .my-journal {
   margin-top: 20px;
       border: 10px solid red;
 } */
-  
+
   .journal-notes-display {
     display: none;
+    width: inherit;
+    padding: 25px 25px 26px;
+    position: relative;
+    text-align: center;
+    border: 1px solid blue;
   }
 
-.my-journal-section {
-  display: grid;
-/*   padding: 20px; */
-  width: 100%;
+  .my-journal-section {
+    display: grid;
+    /*   padding: 20px; */
+    width: 100%;
     border: 1px solid green;
-}
-  
+  }
+
   .journal {
-/*   width: 50%; */
-      width: inherit;
-/*     height: max; */
-            border: 3px solid orange;
+    /*   width: 50%; */
+    width: inherit;
+    /*     height: max; */
+    border: 3px solid orange;
   }
-  
+
   .journal-grid {
-/*     width: 50%; */
-      width: inherit;
-      border: 3px solid red;
+    /*     width: 50%; */
+    width: inherit;
+    border: 3px solid red;
   }
-  
-form {
-  background: rgba(255, 255, 255, 0.6);
-  padding: 25px 25px 26px;
-/*   width: 100%; */
+
+  form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 25px 25px 26px;
+    /*   width: 100%; */
     width: inherit;
-/*     border: 1px solid #959595; */
-      border: 1px solid purple;
-}
+    /*     border: 1px solid #959595; */
+    border: 1px solid purple;
+  }
 
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 
-fieldset:not(:first-child) {
-  margin-top: 10px;
-}
+  fieldset:not(:first-child) {
+    margin-top: 10px;
+  }
 
-textarea {
-  height: 50px;
-  width: 330px;
-  padding: 0;
-  margin: 0;
-}
+  textarea {
+    height: 50px;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+  }
 
-/* THIS FORMATS THE FORM DATA ENTRY BOXES */
+  /* THIS FORMATS THE FORM DATA ENTRY BOXES */
 
-input[type="text"],
-select {
-  border: 1px solid #bcbcbc;
-  padding: 6px;
-  margin: 0;
-  background: #dcdcdc;
-  border-radius: 4px;
-}
+  input[type="text"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
 
-textarea,
-input[type="textarea"],
-select {
-  border: 1px solid #bcbcbc;
-  padding: 6px;
-  margin: 0;
-  background: #dcdcdc;
-  border-radius: 4px;
-}
+  textarea,
+  input[type="textarea"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
 
-input[type="date"],
-select {
-  font-family: "Akatab";
-  color: #838996;
-  font-size: 24px;
-  border: 1px solid #bcbcbc;
-  padding: 6px;
-  margin: 0;
-  background: #dcdcdc;
-  border-radius: 4px;
-}
+  input[type="date"],
+  select {
+    font-family: "Akatab";
+    color: #838996;
+    font-size: 24px;
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
 
-#submit-button {
-  font-family: "Akatab";
-  color: #838996;
-  font-weight: bold;
-  font-size: 24px;
-  background: #dcdcdc;
-  border: 6px solid #686b69;
-  border-radius: 8px;
-}
+  #submit-button {
+    font-family: "Akatab";
+    color: #838996;
+    font-weight: bold;
+    font-size: 24px;
+    background: #dcdcdc;
+    border: 6px solid #686b69;
+    border-radius: 8px;
+  }
 
-input[type="submit"],
-select {
-  font-family: "Akatab";
-  padding: 6px;
-  margin: 0;
-  background: #fff9e2;
-  border-radius: 4px;
-}
+  input[type="submit"],
+  select {
+    font-family: "Akatab";
+    padding: 6px;
+    margin: 0;
+    background: #fff9e2;
+    border-radius: 4px;
+  }
 
-input[type="text"] {
-  font-size: 24px;
-  width: 100%;
-  height: 30px;
-  margin: 2px 0 0;
-}
+  input[type="text"] {
+    font-size: 24px;
+    width: 100%;
+    height: 30px;
+    margin: 2px 0 0;
+  }
 
-input[type="textarea"] {
-  font-size: 24px;
-  width: 100%;
-  height: 60px;
-  margin: 2px 0 0;
-}
+  input[type="textarea"] {
+    font-size: 24px;
+    width: 100%;
+    height: 60px;
+    margin: 2px 0 0;
+  }
 
-.journal-heading {
-  display: flex;
-  justify-content: center;
-  text-align: start;
-/*     width: 100%; */
+  .journal-heading {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    /*     width: 100%; */
     width: inherit;
-}
+  }
 
-/* .journal-image {
+  /* .journal-image {
   display: none;
   height: 100px;
   padding-left: 100px;
 } */
 
-.appsheet {
-/*   width: 100%; */
-  width: inherit;
-  margin: 2px;
-  border: 10px solid yellow;
-}
-
-.journal-notes-display {
-  /*   display: flexbox;
-  flex-wrap: wrap; */
-  /*   background: rgba(255, 255, 255, 0.6); */
-/*     width: 100%; */
+  .appsheet {
+    /*   width: 100%; */
     width: inherit;
-  padding: 25px 25px 26px;
-  position: relative;
-  /*   font-size: 1.5em; */
-  text-align: center;
-/*   border: 1px solid #959595; */
-    border: 1px solid blue;
-}
+    margin: 2px;
+    border: 10px solid yellow;
+  }
 
-/* FORMAT JOURNAL END */
-  
+  /* FORMAT JOURNAL END */
+
   .footer {
-     font-size: 12px;
+    font-size: 12px;
     color: white;
     background-color: #009990;
     padding: 5px;
-/*   width: 100%;
+    /*   width: 100%;
   height: 60px; */
   }
-
 }
 /*MOBILE PORTRAIT END */
 
@@ -751,7 +771,6 @@ input[type="textarea"] {
 /* @media screen and (min-width: 321px) and (max-width: 480px) { */
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  
   h1 {
     font-size: 25px;
     color: #074173;
@@ -768,10 +787,7 @@ input[type="textarea"] {
     font-size: 15px;
     color: #c5ff95;
   }
-  
- 
 
-  
   .topflexbox {
     display: grid;
   }
@@ -783,11 +799,11 @@ input[type="textarea"] {
     background-size: cover;
     height: 200px;
     display: flex;
-/*     align-items: bottom;
+    /*     align-items: bottom;
     justify-content: space-between; */
-/*     padding: 10px; */
+    /*     padding: 10px; */
   }
-  
+
   .heading {
     text-align: right;
   }
@@ -842,83 +858,52 @@ input[type="textarea"] {
     align-self: flex-end;
     opacity: 0.8;
   }
-  
+
   .what-now {
-      text-align: center;
+    text-align: center;
   }
 
-
+  .season-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #e1ffbb;
+    grid-gap: 20px;
+    padding: 15px;
+    /*   border: 10px solid green; */
+  }
 
   .modal {
     display: none;
     position: absolute;
-    height: 50px;
-    padding: 5px;
-    border: 1px solid red;
+    z-index: 1; /* Sit on top */
+    width: 70%;
+    height: max;
+    background-color: white;
+    border: 3px solid;
+    border-color: #009990;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #009990;
+/*     left: 0; */
+    /*     top: 50px; */
+    left: 50px;
   }
 
-  .season-grid {
-      display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    place-items: center;
-    grid-gap: 5px;
-    padding: 5px;
-/*     border: 10px solid green; */
-  }
-
-  /*     .season-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-bottom: 20px;
-} */
-
-  .season-box {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-        background-color: #E1FFBB;
-        width: 100%;
-    min-height: 100vh;
-    border: 5px solid red;
+  .modal-content {
+    position: absolute;
+    right: 0;
+    left: 20;
   }
 
   .season {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: white;
-    height: 250px;
     align-items: center;
-    place-items: center;
-    padding-bottom: 20px;
+    background-color: white;
+    padding-bottom: 15px;
     margin: 15px;
-    border: 5px solid orange;
-  }
-  
-/*   .season {
-    display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-} */
-
-  .caption {
-    font-size: 18px;
-    text-align: center;
-    color: black;
-  }
-
-  .season-box img {
-    display: block;
-    margin: auto;
-    width: 75%;
-    border-radius: 5%;
-  }
-
-  .season-name {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
+    /*   border: 5px solid orange; */
   }
 
   .season-topic-title {
@@ -926,13 +911,47 @@ input[type="textarea"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: 074799;
+    /*       border: solid 2px; */
+    /*   border-color: #009990; */
+  }
+
+  .caption {
+    font-size: 18px;
+    text-align: center;
+    color: #009990;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  .season-name {
+/*     color: #001a6; */
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .season-box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #e1ffbb;
+    width: 100%;
+    /*     min-height: 100vh; */
+    /*     border: 5px solid red; */
   }
 
   .transition-arrow-dot-spring {
     display: flex;
     justify-content: space-evenly;
     width: max;
-    border: 5px solid purple;
+    /*     border: 5px solid purple; */
   }
 
   /* Next & previous buttons */
@@ -942,15 +961,15 @@ input[type="textarea"] {
     position: relative;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: green;
+    padding: 5px;
+    color: #009990;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.6s ease;
     /*   border-radius: 0 3px 3px 0; */
     border-radius: 50%;
     user-select: none;
-    border: 3px solid;
+    /*   border: 3px solid; */
   }
 
   .arrows-spring {
@@ -973,7 +992,7 @@ input[type="textarea"] {
 
   .active,
   .dot-spring:hover {
-    background-color: green;
+    background-color: #009990;
   }
 
   .spring-topic-plus-image {
@@ -982,16 +1001,20 @@ input[type="textarea"] {
 
   /* The Close Button */
   .close-one {
-    color: #888;
-    float: right;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
     border-radius: 50%;
-    /*   user-select: none; */
-    /*   border: 3px solid; */
-    border: 2px solid #888;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: white; /* circle */
+    cursor: pointer;
   }
 
   /* ------------------------ */
@@ -1006,7 +1029,7 @@ input[type="textarea"] {
     display: flex;
     justify-content: space-evenly;
     width: max;
-    border: 5px solid purple;
+    /*     border: 5px solid purple; */
   }
 
   /* Next & previous buttons */
@@ -1016,15 +1039,15 @@ input[type="textarea"] {
     position: relative;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: green;
+    padding: 5px;
+    color: #009990;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.6s ease;
     /*   border-radius: 0 3px 3px 0; */
     border-radius: 50%;
     user-select: none;
-    border: 3px solid;
+    /*   border: 3px solid; */
   }
 
   .arrows-summer {
@@ -1047,16 +1070,7 @@ input[type="textarea"] {
 
   .active,
   .dot-summer:hover {
-    background-color: green;
-  }
-
-  .dot-summer:active {
-    background-color: green;
-    border: 5px solid red;
-  }
-
-  .dot-summer:hover {
-    background-color: green;
+    background-color: #009990;
   }
 
   .summer-topic-plus-image {
@@ -1065,19 +1079,23 @@ input[type="textarea"] {
 
   /* The Close Button */
   .close-two {
-    color: #888;
-    float: right;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
     border-radius: 50%;
-    /*   user-select: none; */
-    /*   border: 3px solid; */
-    border: 2px solid #888;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: white; /*circle */
+    cursor: pointer;
   }
 
-  /* ------------------ */
+  /* -------AUTUMN----------- */
   .autumn-topic {
     /*  display: grid;
   position: relative;
@@ -1089,7 +1107,7 @@ input[type="textarea"] {
     display: flex;
     justify-content: space-evenly;
     width: max;
-    border: 5px solid purple;
+    /*     border: 5px solid purple; */
   }
 
   /* Next & previous buttons */
@@ -1099,15 +1117,15 @@ input[type="textarea"] {
     position: relative;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: green;
+    padding: 5px;
+    color: #009990;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.6s ease;
     /*   border-radius: 0 3px 3px 0; */
     border-radius: 50%;
     user-select: none;
-    border: 3px solid;
+    /*   border: 3px solid; */
   }
 
   .arrows-autumn {
@@ -1130,7 +1148,7 @@ input[type="textarea"] {
 
   .active,
   .dot-autumn:hover {
-    background-color: green;
+    background-color: #009990;
   }
 
   .dot-autumn:active {
@@ -1148,16 +1166,20 @@ input[type="textarea"] {
 
   /* The Close Button */
   .close-three {
-    color: #888;
-    float: right;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
     border-radius: 50%;
-    /*   user-select: none; */
-    /*   border: 3px solid; */
-    border: 2px solid #888;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: white; /* circle */
+    cursor: pointer;
   }
   /* ------------------ */
   .winter-topic {
@@ -1171,7 +1193,7 @@ input[type="textarea"] {
     display: flex;
     justify-content: space-evenly;
     width: max;
-    border: 5px solid purple;
+    /*     border: 5px solid purple; */
   }
 
   /* Next & previous buttons */
@@ -1181,15 +1203,15 @@ input[type="textarea"] {
     position: relative;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: green;
+    padding: 5px;
+    color: #009990;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.6s ease;
     /*   border-radius: 0 3px 3px 0; */
     border-radius: 50%;
     user-select: none;
-    border: 3px solid;
+    /*   border: 3px solid; */
   }
 
   .arrows-winter {
@@ -1212,7 +1234,7 @@ input[type="textarea"] {
 
   .active,
   .dot-winter:hover {
-    background-color: green;
+    background-color: #009990;
   }
 
   .dot-winter:active {
@@ -1230,89 +1252,1592 @@ input[type="textarea"] {
 
   /* The Close Button */
   .close-four {
-    color: #888;
-    float: right;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    /* right: 50; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
     border-radius: 50%;
-    /*   user-select: none; */
-    /*   border: 3px solid; */
-    border: 2px solid #888;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: white; /* circle */
+    cursor: pointer;
   }
 
   /* ------------------- */
   button {
     color: #808080;
     background-color: #f9fbfa;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #888;
     border-radius: 50px;
     margin-bottom: 5px;
     /*            border: 5px solid green; */
-  
-}
+  }
 
-/*   INFORMATION BOXES START -------------- */
- /*   INFORMATION BOXES START -------------- */
-  
-/*   INFORMATION BOXES */
+  /*   INFORMATION BOXES START -------------- */
+  /*   INFORMATION BOXES START -------------- */
+
+  /*   INFORMATION BOXES */
   .information-container {
- display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-  padding: 15px;
-  border: 10px solid pink;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #bde8f5;
+    grid-gap: 20px;
+    padding: 25px;
+    /*     margin: 20px; */
+    /*     border: 10px solid pink; */
+  }
+
+  .information {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+/*             border: 10px solid blue; */
+  }
+
+  .image-box {
+    height: 60%;
+    /*         object-fit: contain; */
+    justify-content: space-between;
+    object-fit: contain;
+  }
+
+  .bee-image-portrait {
+    display: none;
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
   }
   
-  .information-image {
-  /* width in % of viewport */
-width: 100%;
-}
+   .bee-image-landscape {
+    /* width in % of viewport */
+/*      display: none; */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
 
-  
-/*  FORMAT THE JOURNAL START */
-  
-  
-/* .my-journal {
+  .manure-image {
+    /* width in % of viewport */
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: contain;
+    /*              border: 1px solid red; */
+  }
+
+  /*  FORMAT THE JOURNAL START */
+
+  /* .my-journal {
   margin-top: 20px;
       border: 10px solid red;
 } */
 
+  .my-journal-section {
+    display: grid;
+    /*   padding: 20px; */
+    width: 100%;
+    border: 1px solid green;
+  }
+
+  .journal {
+    /*   width: 50%; */
+    width: inherit;
+    /*     height: max; */
+    border: 3px solid orange;
+  }
+
+  .journal-grid {
+    /*     width: 50%; */
+    width: inherit;
+    border: 3px solid red;
+  }
+
+  form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 25px 25px 26px;
+    /*   width: 100%; */
+    width: inherit;
+    /*     border: 1px solid #959595; */
+    border: 1px solid purple;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  fieldset:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  textarea {
+    height: 50px;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* THIS FORMATS THE FORM DATA ENTRY BOXES */
+
+  input[type="text"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  textarea,
+  input[type="textarea"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  input[type="date"],
+  select {
+    font-family: "Akatab";
+    color: #838996;
+    font-size: 24px;
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  #submit-button {
+    font-family: "Akatab";
+    color: #838996;
+    font-weight: bold;
+    font-size: 24px;
+    background: #dcdcdc;
+    border: 6px solid #686b69;
+    border-radius: 8px;
+  }
+
+  input[type="submit"],
+  select {
+    font-family: "Akatab";
+    padding: 6px;
+    margin: 0;
+    background: #fff9e2;
+    border-radius: 4px;
+  }
+
+  input[type="text"] {
+    font-size: 24px;
+    width: 100%;
+    height: 30px;
+    margin: 2px 0 0;
+  }
+
+  input[type="textarea"] {
+    font-size: 24px;
+    width: 100%;
+    height: 60px;
+    margin: 2px 0 0;
+  }
+
+  .journal-heading {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    /*     width: 100%; */
+    width: inherit;
+  }
+
+  /* .journal-image {
+  display: none;
+  height: 100px;
+  padding-left: 100px;
+} */
+
+  .appsheet {
+    /*   width: 100%; */
+    width: inherit;
+    margin: 2px;
+    border: 10px solid yellow;
+  }
+
+  .journal-notes-display {
+    /*   display: flexbox;
+  flex-wrap: wrap; */
+    /*   background: rgba(255, 255, 255, 0.6); */
+    /*     width: 100%; */
+    width: inherit;
+    padding: 25px 25px 26px;
+    position: relative;
+    /*   font-size: 1.5em; */
+    text-align: center;
+    /*   border: 1px solid #959595; */
+    border: 1px solid blue;
+  }
+
+  .footer {
+    font-size: 14px;
+    color: white;
+    background-color: #009990;
+    padding: 5px;
+    /*   width: 100%;
+  height: 60px; */
+  }
+
+  /* FORMAT JOURNAL END */
+}
+
+/* END TABLET PORTRAIT MAX WIDTH 480px*/
+
+/* -------------------- */
+
+/* START TABLET PORTRAIT MAX WIDTH 480px*/
+
+@media screen and (min-width: 481px) and (max-width: 520px) {
+  h1 {
+    font-size: 25px;
+    color: #074173;
+    /*     color:white; */
+    /*     background-color: white; */
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1679ab;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #c5ff95;
+  }
+
+  .topflexbox {
+    display: grid;
+  }
+
+  .exclude-menu {
+    background-image: url("https://i.imgur.com/Ja5yGRx.jpeg");
+    background-repeat: none;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    /*     align-items: bottom;
+    justify-content: space-between; */
+    /*     padding: 10px; */
+  }
+
+  .heading {
+    text-align: right;
+  }
+
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    color: #0000ff;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+
+  .topflexbox-limerick {
+    display: none;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    align-self: flex-end;
+    opacity: 0.8;
+  }
+
+  .what-now {
+    text-align: center;
+  }
+
+  .season-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #e1ffbb;
+    grid-gap: 20px;
+    padding: 15px;
+    /*   border: 10px solid green; */
+  }
+
+  .modal {
+    display: none;
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    width: 70%;
+    height: max;
+    background-color: white;
+    border: 3px solid;
+    border-color: #009990;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #009990;
+    left: 0;
+    /*     top: 50px; */
+/*     left: 50px; */
+  }
+
+  .modal-content {
+    position: absolute;
+    right: 0;
+    left: 20;
+  }
+
+  .season {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: white;
+    padding-bottom: 15px;
+    margin: 15px;
+    /*   border: 5px solid orange; */
+  }
+
+  .season-topic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: 074799;
+    /*       border: solid 2px; */
+    /*   border-color: #009990; */
+  }
+
+  .caption {
+    font-size: 18px;
+    text-align: center;
+    color: #009990;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  .season-name {
+/*     color: #001a6; */
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .season-box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #e1ffbb;
+    width: 100%;
+    /*     min-height: 100vh; */
+    /*     border: 5px solid red; */
+  }
+
+  .transition-arrow-dot-spring {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-spring,
+  .next-spring {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-spring {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-spring {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-spring:hover {
+    background-color: #009990;
+  }
+
+  .spring-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-one {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------------ */
+  .summer-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-summer {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-summer,
+  .next-summer {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-summer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-summer {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-summer:hover {
+    background-color: #009990;
+  }
+
+  .summer-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-two {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /*circle */
+    cursor: pointer;
+  }
+
+  /* -------AUTUMN----------- */
+  .autumn-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-autumn {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-autumn,
+  .next-autumn {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-autumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-autumn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-autumn:hover {
+    background-color: #009990;
+  }
+
+  .dot-autumn:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-autumn:hover {
+    background-color: green;
+  }
+
+  .autumn-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-three {
+    font-weight: bold;
+    font-size: 16px;
+       color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+  /* ------------------ */
+  .winter-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-winter {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-winter,
+  .next-winter {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-winter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-winter {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-winter:hover {
+    background-color: #009990;
+  }
+
+  .dot-winter:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-winter:hover {
+    background-color: green;
+  }
+
+  .winter-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-four {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    /* right: 50; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------- */
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    /*            border: 5px solid green; */
+  }
+
+  /*   INFORMATION BOXES START -------------- */
+  /*   INFORMATION BOXES START -------------- */
+
+  /*   INFORMATION BOXES */
+  .information-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #bde8f5;
+    grid-gap: 20px;
+    padding: 25px;
+    /*     margin: 20px; */
+    /*     border: 10px solid pink; */
+  }
+
+  .information {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+/*             border: 10px solid blue; */
+  }
+
+  .image-box {
+    height: 60%;
+    /*         object-fit: contain; */
+    justify-content: space-between;
+    object-fit: contain;
+  }
+
+    .bee-image-portrait {
+    display: none;
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+  
+   .bee-image-landscape {
+    /* width in % of viewport */
+/*      display: none; */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+
+
+  .manure-image {
+    /* width in % of viewport */
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: contain;
+    /*              border: 1px solid red; */
+  }
+
+  /*  FORMAT THE JOURNAL START */
+
+  /* .my-journal {
+  margin-top: 20px;
+      border: 10px solid red;
+} */
+
+  .my-journal-section {
+    display: grid;
+    /*   padding: 20px; */
+    width: 100%;
+    border: 1px solid green;
+  }
+
+  .journal {
+    /*   width: 50%; */
+    width: inherit;
+    /*     height: max; */
+    border: 3px solid orange;
+  }
+
+  .journal-grid {
+    /*     width: 50%; */
+    width: inherit;
+    border: 3px solid red;
+  }
+
+  form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 25px 25px 26px;
+    /*   width: 100%; */
+    width: inherit;
+    /*     border: 1px solid #959595; */
+    border: 1px solid purple;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  fieldset:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  textarea {
+    height: 50px;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* THIS FORMATS THE FORM DATA ENTRY BOXES */
+
+  input[type="text"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  textarea,
+  input[type="textarea"],
+  select {
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  input[type="date"],
+  select {
+    font-family: "Akatab";
+    color: #838996;
+    font-size: 24px;
+    border: 1px solid #bcbcbc;
+    padding: 6px;
+    margin: 0;
+    background: #dcdcdc;
+    border-radius: 4px;
+  }
+
+  #submit-button {
+    font-family: "Akatab";
+    color: #838996;
+    font-weight: bold;
+    font-size: 24px;
+    background: #dcdcdc;
+    border: 6px solid #686b69;
+    border-radius: 8px;
+  }
+
+  input[type="submit"],
+  select {
+    font-family: "Akatab";
+    padding: 6px;
+    margin: 0;
+    background: #fff9e2;
+    border-radius: 4px;
+  }
+
+  input[type="text"] {
+    font-size: 24px;
+    width: 100%;
+    height: 30px;
+    margin: 2px 0 0;
+  }
+
+  input[type="textarea"] {
+    font-size: 24px;
+    width: 100%;
+    height: 60px;
+    margin: 2px 0 0;
+  }
+
+  .journal-heading {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    /*     width: 100%; */
+    width: inherit;
+  }
+
+  /* .journal-image {
+  display: none;
+  height: 100px;
+  padding-left: 100px;
+} */
+
+  .appsheet {
+    /*   width: 100%; */
+    width: inherit;
+    margin: 2px;
+    border: 10px solid yellow;
+  }
+
+  .journal-notes-display {
+    /*   display: flexbox;
+  flex-wrap: wrap; */
+    /*   background: rgba(255, 255, 255, 0.6); */
+    /*     width: 100%; */
+    width: inherit;
+    padding: 25px 25px 26px;
+    position: relative;
+    /*   font-size: 1.5em; */
+    text-align: center;
+    /*   border: 1px solid #959595; */
+    border: 1px solid blue;
+  }
+
+  .footer {
+    font-size: 14px;
+    color: white;
+    background-color: #009990;
+    padding: 5px;
+    /*   width: 100%;
+  height: 60px; */
+  }
+
+  /* FORMAT JOURNAL END */
+}
+
+/* START TABLET PORTRAIT MAX WIDTH 768px*/
+
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+    color: #074173;
+    /*     color:white; */
+    /*     background-color: white; */
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1679ab;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #c5ff95;
+  }
+
+  .topflexbox {
+    display: grid;
+  }
+
+  .exclude-menu {
+    background-image: url("https://i.imgur.com/Ja5yGRx.jpeg");
+    background-repeat: none;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    /*     align-items: bottom;
+    justify-content: space-between; */
+    /*     padding: 10px; */
+  }
+
+  .heading {
+    text-align: right;
+  }
+
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    color: #0000ff;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+
+  .topflexbox-limerick {
+    display: none;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    align-self: flex-end;
+    opacity: 0.8;
+  }
+
+  .what-now {
+    text-align: center;
+  }
+
+  .season-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #e1ffbb;
+    grid-gap: 20px;
+    padding: 15px;
+    /*   border: 10px solid green; */
+  }
+
+  .modal {
+    display: none;
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    width: 70%;
+    height: max;
+    background-color: white;
+    border: 3px solid;
+    border-color: #009990;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #009990;
+    left: 0;
+    /*     top: 50px; */
+/*     left: 50px; */
+  }
+
+  .modal-content {
+    position: absolute;
+    right: 0;
+    left: 20;
+  }
+
+  .season {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: white;
+    padding-bottom: 15px;
+    margin: 15px;
+    /*   border: 5px solid orange; */
+  }
+
+  .season-topic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: 074799;
+    /*       border: solid 2px; */
+    /*   border-color: #009990; */
+  }
+
+  .caption {
+    font-size: 18px;
+    text-align: center;
+    color: #009990;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  .season-name {
+/*     color: #001a6; */
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .season-box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #e1ffbb;
+    width: 100%;
+    /*     min-height: 100vh; */
+    /*     border: 5px solid red; */
+  }
+
+  .transition-arrow-dot-spring {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-spring,
+  .next-spring {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-spring {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-spring {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-spring:hover {
+    background-color: #009990;
+  }
+
+  .spring-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-one {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------------ */
+  .summer-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-summer {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-summer,
+  .next-summer {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-summer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-summer {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-summer:hover {
+    background-color: #009990;
+  }
+
+  .summer-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-two {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /*circle */
+    cursor: pointer;
+  }
+
+  /* -------AUTUMN----------- */
+  .autumn-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-autumn {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-autumn,
+  .next-autumn {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-autumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-autumn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-autumn:hover {
+    background-color: #009990;
+  }
+
+  .dot-autumn:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-autumn:hover {
+    background-color: green;
+  }
+
+  .autumn-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-three {
+    font-weight: bold;
+    font-size: 16px;
+       color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+  /* ------------------ */
+  .winter-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-winter {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-winter,
+  .next-winter {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-winter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-winter {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-winter:hover {
+    background-color: #009990;
+  }
+
+  .dot-winter:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-winter:hover {
+    background-color: green;
+  }
+
+  .winter-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-four {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    /* right: 50; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------- */
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    /*            border: 5px solid green; */
+  }
+
+  /*   INFORMATION BOXES START -------------- */
+  /*   INFORMATION BOXES START -------------- */
+
+  /*   INFORMATION BOXES */
+  .information-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #bde8f5;
+    grid-gap: 20px;
+    padding: 25px;
+    /*     margin: 20px; */
+/*         border: 10px solid pink; */
+  }
+
+  .information {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    /*         border: 10px solid blue; */
+  }
+
+  .image-box {
+    height: 60%;
+    /*         object-fit: contain; */
+    justify-content: space-between;
+    object-fit: contain;
+  }
+
+  .bee-image-portrait {
+/*     display: none; */
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+  
+   .bee-image-landscape {
+    /* width in % of viewport */
+     display: none;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+
+  .manure-image {
+    /* width in % of viewport */
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: contain;
+    /*              border: 1px solid red; */
+  }
+
+/* -----------------   FORMAT THE JOURNAL START    ----------------------- */
+
+ 
+.my-journal {
+  margin-top: 30px;
+}
+
 .my-journal-section {
   display: grid;
-/*   padding: 20px; */
-  width: 100%;
-    border: 1px solid green;
+  padding: 20px;
 }
-  
-  .journal {
-/*   width: 50%; */
-      width: inherit;
-/*     height: max; */
-            border: 3px solid orange;
-  }
-  
-  .journal-grid {
-/*     width: 50%; */
-      width: inherit;
-      border: 3px solid red;
-  }
-  
+
 form {
   background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #959595;
   padding: 25px 25px 26px;
-/*   width: 100%; */
-    width: inherit;
-/*     border: 1px solid #959595; */
-      border: 1px solid purple;
+  width: max;
 }
 
 fieldset {
@@ -1402,45 +2927,759 @@ input[type="textarea"] {
   display: flex;
   justify-content: center;
   text-align: start;
-/*     width: 100%; */
-    width: inherit;
+  border: 3px pink;
 }
 
-/* .journal-image {
-  display: none;
+.leaves {
   height: 100px;
   padding-left: 100px;
-} */
+}
 
 .appsheet {
-/*   width: 100%; */
-  width: inherit;
-  margin: 2px;
-  border: 10px solid yellow;
+  width: auto;
+  margin: 5px;
+  border: 1px solid grey;
 }
 
 .journal-notes-display {
   /*   display: flexbox;
   flex-wrap: wrap; */
   /*   background: rgba(255, 255, 255, 0.6); */
-/*     width: 100%; */
-    width: inherit;
+  border: 1px solid #959595;
   padding: 25px 25px 26px;
   position: relative;
   /*   font-size: 1.5em; */
   text-align: center;
-/*   border: 1px solid #959595; */
-    border: 1px solid blue;
 }
-  
-    .footer {
-     font-size: 14px;
+
+  .footer {
+    font-size: 14px;
     color: white;
     background-color: #009990;
     padding: 5px;
-/*   width: 100%;
+    /*   width: 100%;
   height: 60px; */
   }
 
-/* FORMAT JOURNAL END */
+  /* FORMAT JOURNAL END */
+}
+
+
+/* START TABLET PORTRAIT MAX WIDTH 990px*/
+
+/* @media screen and (min-width: 769px) and (max-width: 990px) { */
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 25px;
+    color: #074173;
+    /*     color:white; */
+    /*     background-color: white; */
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1679ab;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #c5ff95;
+  }
+
+  .topflexbox {
+    display: grid;
+  }
+
+  .exclude-menu {
+    background-image: url("https://i.imgur.com/Ja5yGRx.jpeg");
+    background-repeat: none;
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    /*     align-items: bottom;
+    justify-content: space-between; */
+    /*     padding: 10px; */
+  }
+
+  .heading {
+    text-align: right;
+  }
+
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    color: #0000ff;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+
+  .topflexbox-limerick {
+    display: none;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    align-self: flex-end;
+    opacity: 0.8;
+  }
+
+  .what-now {
+    text-align: center;
+  }
+
+  .season-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #e1ffbb;
+    grid-gap: 20px;
+    padding: 15px;
+    /*   border: 10px solid green; */
+  }
+
+  .modal {
+    display: none;
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    width: 70%;
+    height: max;
+    background-color: white;
+    border: 3px solid;
+    border-color: #009990;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    box-shadow: 3px 3px #009990;
+    left: 0;
+    /*     top: 50px; */
+/*     left: 50px; */
+  }
+
+  .modal-content {
+    position: absolute;
+    right: 0;
+    left: 20;
+  }
+
+  .season {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: white;
+    padding-bottom: 15px;
+    margin: 15px;
+    /*   border: 5px solid orange; */
+  }
+
+  .season-topic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: 074799;
+    /*       border: solid 2px; */
+    /*   border-color: #009990; */
+  }
+
+  .caption {
+    font-size: 18px;
+    text-align: center;
+    color: #009990;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .season-box img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  .season-name {
+/*     color: #001a6; */
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .season-box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #e1ffbb;
+    width: 100%;
+    /*     min-height: 100vh; */
+    /*     border: 5px solid red; */
+  }
+
+  .transition-arrow-dot-spring {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-spring,
+  .next-spring {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-spring {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-spring {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-spring:hover {
+    background-color: #009990;
+  }
+
+  .spring-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-one {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------------ */
+  .summer-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-summer {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-summer,
+  .next-summer {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-summer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-summer {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-summer:hover {
+    background-color: #009990;
+  }
+
+  .summer-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-two {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /*circle */
+    cursor: pointer;
+  }
+
+  /* -------AUTUMN----------- */
+  .autumn-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-autumn {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-autumn,
+  .next-autumn {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-autumn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-autumn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-autumn:hover {
+    background-color: #009990;
+  }
+
+  .dot-autumn:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-autumn:hover {
+    background-color: green;
+  }
+
+  .autumn-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-three {
+    font-weight: bold;
+    font-size: 16px;
+       color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+  /* ------------------ */
+  .winter-topic {
+    /*  display: grid;
+  position: relative;
+  align-self: center;
+   border: 10px solid pink; */
+  }
+
+  .transition-arrow-dot-winter {
+    display: flex;
+    justify-content: space-evenly;
+    width: max;
+    /*     border: 5px solid purple; */
+  }
+
+  /* Next & previous buttons */
+  .prev-winter,
+  .next-winter {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: #009990;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    /*   border-radius: 0 3px 3px 0; */
+    border-radius: 50%;
+    user-select: none;
+    /*   border: 3px solid; */
+  }
+
+  .arrows-winter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-winter {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot-winter:hover {
+    background-color: #009990;
+  }
+
+  .dot-winter:active {
+    background-color: green;
+    border: 5px solid red;
+  }
+
+  .dot-winter:hover {
+    background-color: green;
+  }
+
+  .winter-topic-plus-image {
+    background-color: white;
+  }
+
+  /* The Close Button */
+  .close-four {
+    font-weight: bold;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    /*     float: top; */
+    /* right: 50; */
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    border: 3px solid;
+    border-color: #009990;
+    border-radius: 50%;
+    background-color: white; /* circle */
+    cursor: pointer;
+  }
+
+  /* ------------------- */
+  button {
+    color: #808080;
+    background-color: #f9fbfa;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    /*            border: 5px solid green; */
+  }
+
+  /*   INFORMATION BOXES START -------------- */
+  /*   INFORMATION BOXES START -------------- */
+
+  /*   INFORMATION BOXES */
+  .information-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #bde8f5;
+    grid-gap: 20px;
+    padding: 25px;
+    /*     margin: 20px; */
+    /*     border: 10px solid pink; */
+  }
+
+  .information {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    /*         border: 10px solid blue; */
+  }
+
+  .image-box {
+    height: 60%;
+    /*         object-fit: contain; */
+    justify-content: space-between;
+    object-fit: contain;
+  }
+
+.bee-image-portrait {
+    display: none;
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+  
+   .bee-image-landscape {
+    /* width in % of viewport */
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    /*             border: 1px solid green; */
+  }
+
+  .manure-image {
+    /* width in % of viewport */
+width: 100%;
+        object-fit: contain;
+    margin-bottom: 15px;
+    /*              border: 1px solid red; */
+  }
+
+  /*  FORMAT THE JOURNAL START */
+
+  /* .my-journal {
+  margin-top: 20px;
+      border: 10px solid red;
+} */
+
+ .my-journal {
+  margin-top: 30px;
+}
+
+.my-journal-section {
+  display: grid;
+  padding: 20px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #959595;
+  padding: 25px 25px 26px;
+  width: max;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset:not(:first-child) {
+  margin-top: 10px;
+}
+
+textarea {
+  height: 50px;
+  width: 330px;
+  padding: 0;
+  margin: 0;
+}
+
+/* THIS FORMATS THE FORM DATA ENTRY BOXES */
+
+input[type="text"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+textarea,
+input[type="textarea"],
+select {
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+input[type="date"],
+select {
+  font-family: "Akatab";
+  color: #838996;
+  font-size: 24px;
+  border: 1px solid #bcbcbc;
+  padding: 6px;
+  margin: 0;
+  background: #dcdcdc;
+  border-radius: 4px;
+}
+
+#submit-button {
+  font-family: "Akatab";
+  color: #838996;
+  font-weight: bold;
+  font-size: 24px;
+  background: #dcdcdc;
+  border: 6px solid #686b69;
+  border-radius: 8px;
+}
+
+input[type="submit"],
+select {
+  font-family: "Akatab";
+  padding: 6px;
+  margin: 0;
+  background: #fff9e2;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+  margin: 2px 0 0;
+}
+
+input[type="textarea"] {
+  font-size: 24px;
+  width: 100%;
+  height: 60px;
+  margin: 2px 0 0;
+}
+
+.journal-heading {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  border: 3px pink;
+}
+
+.leaves {
+  height: 100px;
+  padding-left: 100px;
+}
+
+.appsheet {
+  width: auto;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.journal-notes-display {
+  /*   display: flexbox;
+  flex-wrap: wrap; */
+  /*   background: rgba(255, 255, 255, 0.6); */
+  border: 1px solid #959595;
+  padding: 25px 25px 26px;
+  position: relative;
+  /*   font-size: 1.5em; */
+  text-align: center;
+}
+
+  .footer {
+    font-size: 14px;
+    color: white;
+    background-color: #009990;
+    padding: 5px;
+    /*   width: 100%;
+  height: 60px; */
+  }
+
+  /* FORMAT JOURNAL END */
 }
