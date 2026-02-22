@@ -15,7 +15,7 @@
       font-size: 22px;
     }
   </style>
-  <title>Kieran's Vegie Garden!</title>
+  <title>Kieran's Vegie Patch!</title>
   <!--STYLE.CSS FILE LINK HERE -->
   <link rel="stylesheet" href="./style.css" />
   <!-- INCLUDE defer SO DIRECT BROWSER THAT THE SCRIPT IS MEANT TO BE EXECUTED AFTER THE DOCUMENT HAS BEEN PARSED-->
@@ -32,14 +32,15 @@
       <a href="#top">Go to top</a>
       <a href="#now">Seasonal planting</a>
       <a href="#weather">Weather</a>
-      <a href="#ideas">Boosting nature's work</a>
-      <a href="#journal">My journal</a>
+      <a href="#ideas">Helping nature</a>
+      <a href="#journal">My vegie patch diary</a>
     </nav>
   </a>
 </div>
 <!--    END HAMBURGER MENU    -->
 
 <body>
+
   <header>
     <div class="topflexbox" id="top">
       <div class="heading">
@@ -50,7 +51,7 @@
           <p>Kieran's Vegie Patch</p>
         </div>
         <div class="hero-image-container">
-          <img class="hero-image" src="https://i.imgur.com/Ja5yGRx.jpeg" alt="boy in vergie garden">
+          <img class="hero-image" src="https://i.imgur.com/Ja5yGRx.jpeg" alt="boy in vegie patch">
         </div>
         <div class="topflexbox-limerick">
           <p> My nephew wants to grow<br>
@@ -72,357 +73,400 @@
   </header>
 
   <main>
-    <div class="happening-now-section">
-      <h2 class="what-now">What can I plant now?</h2>
-      <!-- ---------------- -->
-      <!--       START OF SEASON CAROUSEL -->
-      <div class="season-grid">
-        <section class="season-box">
-          <div class="season">
-            <p class="season-name">SPRING</p>
-            <img class="season-icon" src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonOne">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalOne" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-one">
-                  <h4>X</h4>
-                </span>
-              </div>
+    <!--         THIS SECTION START IS FOR THE LARGE DEVICE GRID -->
+<!--     <section class="large-device-grid"> -->
 
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <!--                 ------------- -->
+      <div class="happening-now-section">
+        <h2 class="what-now">What can I plant now?</h2>
+        <!-- ---------------- -->
+        <!--       START OF SEASON CAROUSEL -->
+        <div class="season-grid">
+          <section class="season-box">
+            <div class="season">
+              <p class="season-name">SPRING</p>
+              <img class="season-icon" src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring">
+              <!-- Trigger/Open The Modal -->
+              <button id="buttonOne">Plant these!</button>
+              <!-- The Modal -->
+              <div id="modalOne" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close-one">
+                    <h4>X</h4>
+                  </span>
+                </div>
 
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <p>Beans</p>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <p>Lettuce</p>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <p>Carrots</p>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <p>Coriander</p>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can even eat the flowers!</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-spring">
-                <div class="arrows-spring">
-                  <a class="prev-spring" onclick="plusSlideSpringTopic(-1)">&#10094;</a>
-                  <br>
+                <!--   START SEASON CAROUSEL -->
+                <section class="carousel">
+                  <!--                 ------------- -->
 
-                  <!-- The dots/circles -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(1)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(2)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(3)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(4)"></span>
+                  <div class="spring-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring" width="15" height="100">
+                      <p>Beans</p>
+                      <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
+                      <div class="caption">
+                        <p>These will quickly get taller than you!</p>
                       </div>
-                    </section>
-                  </div>
-                  <a class="next-spring" onclick="plusSlideSpringTopic(1)">&#10095;</a>
-                </div>
-              </div>
-              <!-- END Next and previous buttons -->
-            </div>
-          </div>
-
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">SUMMER</p>
-            <img class="season-icon" src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonTwo">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalTwo" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-two">
-                  <h4>X</h4>
-                </span>
-              </div>
-
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <p>Beanssummer</p>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
                     </div>
                   </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <p>Lettucesummer</p>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <p>Carrotssummer</p>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <p>Coriander</p>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-summer">
-                <div class="arrows-summer">
-                  <a class="prev-summer" onclick="plusSlideSummerTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(1)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(2)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(3)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(4)"></span>
+                  <!--                 ------------- -->
+                  <div class="spring-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring" width="15" height="100">
+                      <p>Lettuce</p>
+                      <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
+                      <div class="caption">
+                        <p>Snails love lettuce too, so beware</p>
                       </div>
-                    </section>
-                  </div>
-                  <a class="next-summer" onclick="plusSlideSummerTopic(1)">&#10095;</a>
-                </div>
-              </div>
-              <!-- END Next and previous buttons -->
-            </div>
-          </div>
-
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">AUTUMN</p>
-            <img class="season-icon" src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonThree">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalThree" class="modal">
-              <!-- Modal content -->
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-three">
-                  <h4>X</h4>
-                </span>
-              </div>
-
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <p>Beansautumn</p>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
                     </div>
                   </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <p>Lettuceautumn</p>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <p>Carrotsautumn</p>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <p>Coriander</p>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-autumn">
-                <div class="arrows-autumn">
-                  <a class="prev-autumn" onclick="plusSlideAutumnTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(1)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(2)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(3)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(4)"></span>
+                  <!--                 ------------- -->
+                  <div class="spring-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring" width="15" height="100">
+                      <p>Carrots</p>
+                      <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="red rose seated stretch">
+                      <div class="caption">
+                        <p>It's a 3 week wait for these to show...</p>
                       </div>
-                    </section>
+                    </div>
                   </div>
-                  <a class="next-autumn" onclick="plusSlideAutumnTopic(1)">&#10095;</a>
+                  <!--                 ------------- -->
+                  <div class="spring-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring" width="15" height="100">
+                      <p>Coriander</p>
+                      <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
+                      <div class="caption">
+                        <p>You can even eat the flowers!</p>
+                      </div>
+                    </div>
+                  </div>
+                    <!--                 ------------- -->
+                  <div class="spring-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring" width="15" height="100">
+                      <p>Tomatoes</p>
+                      <img class="season-image" src="https://i.imgur.com/4bViOY3.jpeg" alt="tomatoes">
+                      <div class="caption">
+                        <p>Wait until the cold nights have finished before planting</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- ---------------- -->
+                <div class="transition-arrow-dot-spring">
+                  <div class="arrows-spring">
+                    <a class="prev-spring" onclick="plusSlideSpringTopic(-1)">&#10094;</a>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div class="dot-season">
+                      <section class="separate-dots-from-image">
+                        <div style="text-align:center">
+                          <span class="dot-spring" onclick="currentSlideSpringTopic(1)"></span>
+                          <span class="dot-spring" onclick="currentSlideSpringTopic(2)"></span>
+                          <span class="dot-spring" onclick="currentSlideSpringTopic(3)"></span>
+                          <span class="dot-spring" onclick="currentSlideSpringTopic(4)"></span>
+                           <span class="dot-spring" onclick="currentSlideSpringTopic(5)"></span>
+                        </div>
+                      </section>
+                    </div>
+                    <a class="next-spring" onclick="plusSlideSpringTopic(1)">&#10095;</a>
+                  </div>
                 </div>
+                <!-- END Next and previous buttons -->
               </div>
-              <!-- END Next and previous buttons -->
             </div>
 
-          </div>
+            <!--     ------------- -->
+            <div class="season">
+              <p class="season-name">SUMMER</p>
+              <img class="season-icon" src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer">
+              <!-- Trigger/Open The Modal -->
+              <button id="buttonTwo">Plant these!</button>
+              <!-- The Modal -->
+              <div id="modalTwo" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close-two">
+                    <h4>X</h4>
+                  </span>
+                </div>
 
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">WINTER</p>
-            <img class="season-icon" src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonFour">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalFour" class="modal">
-              <!-- Modal content -->
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-four">
-                  <h4>X</h4>
-                </span>
-              </div>
-
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <p>Beanswinter</p>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <p>Lettucewinter</p>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <p>Carrotswinter</p>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <p>Coriander</p>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-winter">
-                <div class="arrows-winter">
-                  <a class="prev-winter" onclick="plusSlideWinterTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(1)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(2)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(3)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(4)"></span>
+                <!--   START SEASON CAROUSEL -->
+                <section class="carousel">
+                  <div class="summer-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer" width="8" height="90">
+                      <p>Capsicum</p>
+                      <img class="season-image" src="https://i.imgur.com/Z1r6m0E.jpeg" alt="climbing beans">
+                      <div class="caption">
+                        <p>Capsicums need hot weather to really take off</p>
                       </div>
-                    </section>
+                    </div>
                   </div>
-                  <a class="next-winter" onclick="plusSlideWinterTopic(1)">&#10095;</a>
+                  <!--                 ------------- -->
+                    <div class="summer-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer" width="8" height="90">
+                      <p>More capsicum</p>
+                      <img class="season-image" src="https://i.imgur.com/5Hck2AV.jpeg" alt="carrot seedlings">
+                      <div class="caption">
+                        <p>Yellow capsicum are delicious, and like other capsicums, they prefer warmer weather</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                  <div class="summer-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer" width="8" height="90">
+                      <p>Spring onion</p>
+                      <img class="season-image" src="https://i.imgur.com/FvXsZ9r.jpeg" alt="spring onion">
+                      <div class="caption">
+                        <p>Trim the leaves and roots of store-bought spring onion, then plant them and they will grow again</p>
+                      </div>
+                    </div>
+                  </div>
+                   <!--                 ------------- -->
+                  <div class="summer-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer" width="8" height="90">
+                      <p>Dwarf beans</p>
+                      <img class="season-image" src="https://i.imgur.com/aRgrR5T.jpeg" alt="spring onion">
+                      <div class="caption">
+                        <p>Beans help other plants grow by acting like mulch and adding nitrogen to the soil</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                                  <div class="summer-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer" width="8" height="90">
+                      <p>Tomatoes</p>
+                      <img class="season-image" src="https://i.imgur.com/RC7OXHF.jpeg" alt="coriander">
+                      <div class="caption">
+                        <p>Green zebra tomatoes are really delicious.  They're ripe when the pale green turns bit yellow</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- ---------------- -->
+                <div class="transition-arrow-dot-summer">
+                  <div class="arrows-summer">
+                    <a class="prev-summer" onclick="plusSlideSummerTopic(-1)">&#10094;</a>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <!-- <section class = "separate-dots-from-image"> -->
+                    <div class="dot-season">
+                      <section class="separate-dots-from-image">
+                        <div style="text-align:center">
+                          <span class="dot-summer" onclick="currentSlideSummerTopic(1)"></span>
+                          <span class="dot-summer" onclick="currentSlideSummerTopic(2)"></span>
+                          <span class="dot-summer" onclick="currentSlideSummerTopic(3)"></span>
+                          <span class="dot-summer" onclick="currentSlideSummerTopic(4)"></span>
+                            <span class="dot-summer" onclick="currentSlideSummerTopic(5)"></span>
+                        </div>
+                      </section>
+                    </div>
+                    <a class="next-summer" onclick="plusSlideSummerTopic(1)">&#10095;</a>
+                  </div>
                 </div>
+                <!-- END Next and previous buttons -->
               </div>
-              <!-- END Next and previous buttons -->
             </div>
-          </div>
-        </section>
+
+            <!--     ------------- -->
+            <div class="season">
+              <p class="season-name">AUTUMN</p>
+              <img class="season-icon" src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn">
+              <!-- Trigger/Open The Modal -->
+              <button id="buttonThree">Plant these!</button>
+              <!-- The Modal -->
+              <div id="modalThree" class="modal">
+                <!-- Modal content -->
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close-three">
+                    <h4>X</h4>
+                  </span>
+                </div>
+
+                <!--   START SEASON CAROUSEL -->
+                <section class="carousel">
+                  <div class="autumn-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn" width="5" height="80">
+                      <p>Silverbeet, spinach and lettuce</p>
+                      <img class="season-image" src="https://i.imgur.com/vJtvhUd.jpeg" alt="silverbeet">
+                      <div class="caption">
+                        <p>These are easy to grow from seed, but you'll have to wait longer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                                  <div class="autumn-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn" width="5" height="80">
+                      <p>Potatoes</p>
+                      <img class="season-image" src="https://i.imgur.com/x1MWDm7.jpeg" alt="carrot seedlings">
+                      <div class="caption">
+                        <p>You can plant potatoes in autumn and again in late winter and early spring.  It's fun to dig them up!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                  <div class="autumn-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn" width="5" height="80">
+                      <p>More carrots</p>
+                      <img class="season-image" src="https://i.imgur.com/wnSR0YB.jpeg" alt="carrot seedlings">
+                      <div class="caption">
+                        <p>If you don't grow carrots in loose, well-draining soil, this is what can happen</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="autumn-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn" width="5" height="80">
+                      <p>Beetroot</p>
+                      <img class="season-image" src="https://i.imgur.com/MvLhN68.jpeg" alt="coriander">
+                      <div class="caption">
+                        <p>You can eat the root and the leaves!  They're easy to grow from seed</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- ---------------- -->
+                <div class="transition-arrow-dot-autumn">
+                  <div class="arrows-autumn">
+                    <a class="prev-autumn" onclick="plusSlideAutumnTopic(-1)">&#10094;</a>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <!-- <section class = "separate-dots-from-image"> -->
+                    <div class="dot-season">
+                      <section class="separate-dots-from-image">
+                        <div style="text-align:center">
+                          <span class="dot-autumn" onclick="currentSlideAutumnTopic(1)"></span>
+                          <span class="dot-autumn" onclick="currentSlideAutumnTopic(2)"></span>
+                          <span class="dot-autumn" onclick="currentSlideAutumnTopic(3)"></span>
+                          <span class="dot-autumn" onclick="currentSlideAutumnTopic(4)"></span>
+                        </div>
+                      </section>
+                    </div>
+                    <a class="next-autumn" onclick="plusSlideAutumnTopic(1)">&#10095;</a>
+                  </div>
+                </div>
+                <!-- END Next and previous buttons -->
+              </div>
+
+            </div>
+
+            <!--     ------------- -->
+            <div class="season">
+              <p class="season-name">WINTER</p>
+              <img class="season-icon" src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter">
+              <!-- Trigger/Open The Modal -->
+              <button id="buttonFour">Plant these!</button>
+              <!-- The Modal -->
+              <div id="modalFour" class="modal">
+                <!-- Modal content -->
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close-four">
+                    <h4>X</h4>
+                  </span>
+                </div>
+
+                <!--   START SEASON CAROUSEL -->
+                <section class="carousel">
+                   <div class="winter-topic">
+                    <div class="season-topic-title">
+                    <img src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter" width="5" height="100">
+                      <p>Asian greens</p>
+                      <img class="season-image" src="https://i.imgur.com/QjM1yDO.jpeg" alt="kale">
+                      <div class="caption">
+                        <p>You can be picking kale and bok choy just a few weeks after planting seedlings</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                  <!--                 ------------- -->
+                  <div class="winter-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter" width="5" height="100">
+                      <p>Peas</p>
+                      <img class="season-image" src="https://i.imgur.com/Pb3gcLC.jpeg" alt="red rose seated stretch">
+                      <div class="caption">
+                        <p>Very early and very late winter are great times to plant sugar snap peas and snow peas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                  <div class="winter-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter" width="5" height="100">
+                      <p>Turnips</p>
+                      <img class="season-image" src="https://i.imgur.com/D7dNB1Y.jpeg" alt="turnips">
+                      <div class="caption">
+                        <p>I'm too impatient!  I should have let this turnip grow longer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--                 ------------- -->
+                  <div class="winter-topic">
+                    <div class="season-topic-title">
+                      <img src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter" width="5" height="100">
+                      <p>Coriander</p>
+                      <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
+                      <div class="caption">
+                        <p>You can eat the leaves, stem and flowers, yum</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- ---------------- -->
+                <div class="transition-arrow-dot-winter">
+                  <div class="arrows-winter">
+                    <a class="prev-winter" onclick="plusSlideWinterTopic(-1)">&#10094;</a>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <!-- <section class = "separate-dots-from-image"> -->
+                    <div class="dot-season">
+                      <section class="separate-dots-from-image">
+                        <div style="text-align:center">
+                          <span class="dot-winter" onclick="currentSlideWinterTopic(1)"></span>
+                          <span class="dot-winter" onclick="currentSlideWinterTopic(2)"></span>
+                          <span class="dot-winter" onclick="currentSlideWinterTopic(3)"></span>
+                          <span class="dot-winter" onclick="currentSlideWinterTopic(4)"></span>
+                        </div>
+                      </section>
+                    </div>
+                    <a class="next-winter" onclick="plusSlideWinterTopic(1)">&#10095;</a>
+                  </div>
+                </div>
+                <!-- END Next and previous buttons -->
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--         END OF SEASON CAROUSEL -->
+
       </div>
-      <!--         END OF SEASON CAROUSEL -->
+      <!--       </div> -->
+      <!--       </section> -->
+      <!--     </div> -->
+      <!--     </div> -->
 
-    </div>
-    <!--       </div> -->
-    <!--       </section> -->
-    <!--     </div> -->
-    <!--     </div> -->
+      <!-- ---------------- -->
 
-    <!-- ---------------- -->
-
-    <section class="weather">
-      <!--  WEATHER WIDGET START  ROM https://weatherwidget.io/   -->
-      <!--       <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="CURRANS HILL" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="original">Currans Hill weather</a>
+      <section class="weather">
+        <!--  WEATHER WIDGET START  ROM https://weatherwidget.io/   -->
+        <!--       <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="CURRANS HILL" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="original">Currans Hill weather</a>
       <script>
         ! function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -435,55 +479,67 @@
         }(document, 'script', 'weatherwidget-io-js');
       </script> -->
 
-      <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="Currans Hill" data-label_2="Weather" data-font="Roboto" data-days="3" data-theme="pure">Currans Hill Weather</a>
-      <script>
-        ! function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://weatherwidget.io/js/widget.min.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'weatherwidget-io-js');
-      </script>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="Currans Hill" data-label_2="Weather" data-font="Roboto" data-days="3" data-theme="pure">Currans Hill Weather</a>
+        <script>
+          ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = 'https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, 'script', 'weatherwidget-io-js');
+        </script>
 
-    </section>
-    <!--  WEATHER WIDGET END     -->
+      </section>
+      <!--  WEATHER WIDGET END     -->
 
-    <section class="information-container">
-      <div class="information">
-        <h2>Beneficial insects</h2>
-        <h5>Help these insects and they will help you</h5>
-        <div class="image-box">
-          <a href="https://youtu.be/6uKkn6MtHK8" target="_blank">
-            <img class="bee-image-landscape" src="https://i.imgur.com/7bu6pIl.jpeg" alt="bee and ladybird landscape" width="200" height="200">
-            <img class="bee-image-portrait" src="https://i.imgur.com/dDaLDcz.jpeg" alt="bee ladybird portrait" width="80" height="200"></a>
-        </div>
-        <!--         <div class="beneficial-caption">
+      <section class="information-container">
+        <div class="information">
+          <h2>Beneficial insects</h2>
+          <h5>Help these insects and they will help you</h5>
+          <div class="image-box">
+            <a href="https://youtu.be/6uKkn6MtHK8" target="_blank">
+              <img class="bee-image-landscape" src="https://i.imgur.com/7bu6pIl.jpeg" alt="bee and ladybird landscape" width="200" height="200">
+              <img class="bee-image-portrait" src="https://i.imgur.com/dDaLDcz.jpeg" alt="bee ladybird portrait" width="80" height="200"></a>
+          </div>
+          <!--         <div class="beneficial-caption">
         </div> -->
-      </div>
-
-      <!--       ------------------------- -->
-
-      <div class="information">
-        <h2>Feed the soil</h2>
-        <h5>Healthy soil makes healthy plants</h5>
-        <div class="image-box">
-          <a href="https://www.youtube.com/watch?v=Ld82F6Hm358" target="_blank">
-            <img class="manure-image" src="https://i.imgur.com/6FGjN9b.jpeg" alt="trowel and manure" width="80" height="200"></a>
         </div>
-        <!--         <div class="beneficial-caption">
+
+        <!--       ------------------------- -->
+
+        <div class="information">
+          <h2>Feed the soil</h2>
+          <h5>Healthy soil makes healthy plants</h5>
+          <div class="image-box">
+            <a href="https://www.youtube.com/watch?v=Ld82F6Hm358" target="_blank">
+              <img class="manure-image" src="https://i.imgur.com/6FGjN9b.jpeg" alt="trowel and manure" width="80" height="200"></a>
+          </div>
+          <!--         <div class="beneficial-caption">
         </div> -->
-      </div>
+        </div>
+      </section>
 
-    </section>
+      <section class="resources-container">
+        <div class="resources">
+          <div class="resources-links">
+            <h2>Gardening shows you might enjoy</h2>
+            <div class="box-around-link">
+            <a href="https://iview.abc.net.au/show/gardening-australia-junior" target="_blank">Gardening Australia Junior</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!--    START KIERAN"S GARDEN DIARY -->
+      <!--    START KIERAN"S Patch DIARY -->
+
+        <!--    START KIERAN"S Patch DIARY -->
 
     <!-- --------------- -->
     <div class="my-journal">
-      <h2 id="journal">My journal</h2>
+      <h2 id="journal">My vegie patch diary</h2>
 
       <div class="my-journal-section">
         <section class="journal">
@@ -493,7 +549,7 @@
 
         <div class="journal-notes-display">
           <div class="journal-heading">
-            <h3>My vegie garden diary...</h3>
+<!--             <h3>My vegie patch diary...</h3> -->
           </div>
 
           <iframe src=" https://www.appsheet.com/start/e878389f-8ebc-4da3-973c-61b7e3f813ad" width="100%" height="568"></iframe>
@@ -502,13 +558,14 @@
         <!--    LINK TO GOOGLESHEET    <a href="https://docs.google.com/spreadsheets/d/1hGRDtPG2BF-GH101f7fPpqcbSf_cKN84H06Bvb2D9ng/edit?gid=0#gid=0"> -->
 
       </div>
-      <!--           </div> -->
     </div>
 
-    <!-- url for Kieran's vegie garden diary googlesheet: https://docs.google.com/spreadsheets/d/1hGRDtPG2BF-GH101f7fPpqcbSf_cKN84H06Bvb2D9ng/edit?gid=0#gid=0 -->
+    <!-- url for Kieran's vegie patch diary googlesheet: https://docs.google.com/spreadsheets/d/1hGRDtPG2BF-GH101f7fPpqcbSf_cKN84H06Bvb2D9ng/edit?gid=0#gid=0 -->
 
     <!--    END KIERAN"S GARDEN DIARY -->
 
+      <!--     THIS SECTION END IS FOR THE LARGE DEVICE GRID -->
+<!--     </section> -->
   </main>
 </body>
 
