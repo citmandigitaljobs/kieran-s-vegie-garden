@@ -223,6 +223,12 @@ a {
     /*     color: #074799; */
     color: #81b5f9;
   }
+  
+  h6 {
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+  }
 
   .topflexbox {
     display: grid;
@@ -1029,7 +1035,7 @@ a {
     justify-self: right;
     text-align: right;
     padding: 10px;
-    /*   border: 10px solid green; */
+/*       border: 10px solid green; */
   }
 
   #topMenu {
@@ -1748,7 +1754,7 @@ a {
     justify-self: right;
     text-align: right;
     padding: 10px;
-    /*   border: 10px solid green; */
+/*       border: 10px solid green; */
   }
 
   #topMenu {
@@ -2413,6 +2419,46 @@ a {
     height: auto;
     /*           border: 10px solid green; */
   }
+  
+/*   ------------------------------------- */
+    .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+/*       border: 10px solid green; */
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #bde8f5;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    /*     color: #001a6e; */
+    color: #1679ab;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+/*   -------------------------------------------- */
 
   .hero-image {
     /*     display: none; */
@@ -3044,7 +3090,7 @@ a {
   .heading {
     /*     display: none; */
     text-align: center;
-    /*     border: 10px solid red; */
+/*         border: 10px solid red; */
   }
 
   .exclude-menu {
@@ -3059,7 +3105,47 @@ a {
   .heading-for-small-device {
     display: none;
   }
+  
+  /* HIDE TASK LIST */
 
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+    /*   border: 10px solid green; */
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #bde8f5;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    /*     color: #001a6e; */
+    color: #1679ab;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
+  
   .hero-image {
     /*     display: none; */
     width: 100%;
@@ -3710,6 +3796,46 @@ a {
   .heading-for-small-device {
     display: none;
   }
+  
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+    /*   border: 10px solid green; */
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #bde8f5;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    /*     color: #001a6e; */
+    color: #1679ab;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
 
   .hero-image-container {
     justify-self: center;
@@ -4359,12 +4485,52 @@ a {
     grid-template-columns: 50% 50%;
     width: 100%;
     /*     height: inherit; */
-    /*               border: 5px solid pink; */
+/*                   border: 5px solid pink; */
   }
 
   .heading-for-small-device {
     display: none;
   }
+  
+  /* HIDE TASK LIST */
+
+  .topnav {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    justify-self: right;
+    text-align: right;
+    padding: 10px;
+    /*   border: 10px solid green; */
+  }
+
+  #topMenu {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #bde8f5;
+    z-index: 1;
+  }
+
+  /* STYLE THE LINKS IN HAMBURGER DROPDOWN */
+  .topnav a {
+    /*     color: #001a6e; */
+    color: #1679ab;
+    font-size: 20px;
+    display: block;
+    justify-self: right;
+    text-decoration: none;
+  }
+
+  /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
+  #myLinks {
+    display: none;
+    position: relative;
+    justify-self: right;
+    color: white;
+  }
+
+  /* END HAMBURGER MENU */
 
   .hero-image {
     /*     display: none; */
